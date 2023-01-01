@@ -1,0 +1,822 @@
+brand,product,product_type,ingredient,p_id,i_id,n_ingre,n_product,mp_count,mp_percent,mp_present
+<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>,"<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>, handmade, organic multi-purpose skincare product, 200g (MH200G)",7,none,3,36,0,48,21,0.4375,0
+<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>,"<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>, handmade, organic multi-purpose skincare product, 55g (MH055G)",6,none,4,36,0,50,21,0.42,0
+<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>,"<U+00B6><U+00B9><c3><db>Mung Honey<U+00AE>, handmade, organic multi-purpose skincare product, 15g (MH015G)",1,none,2,36,0,39,29,0.743589744,0
+<U+00A5><U+00A2><U+00A5>ð˜<U+00A1><U+00A1>(Arau),<U+00A5><U+00A2><U+00A5>ð˜<U+00A1><U+00A1><c5><U+0765><U+0725><U+01E5><U+00A3><U+00A5><U+00BD><U+00A9>`<U+00A5><d7>N<U+00A1><U+00A1>(Arau Foaming Body Soap),1,none,1,36,0,39,29,0.743589744,0
+Zwitsal,Hydraterende Zonnemelk SPF50,11,Polysorbate 20,237,81,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,VP/Eicosene Copolymer,237,107,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,Acrylates/Octylacrylamide Copolymer,237,7,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,Acrylates/Vinyl Isodecanoate Crosspolymer,237,8,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,Dimethicone,237,23,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,PVP,237,89,7,34,12,0.352941176,1
+Zwitsal,Hydraterende Zonnemelk SPF50,11,Sodium Polyacrylate,237,92,7,34,12,0.352941176,1
+Zwitsal,SPF 30+ Sun Cream 150 ml,11,Dimethicone,380,23,1,34,12,0.352941176,1
+Zwitsal,Aftersun Cr<U+00A8><U+00A8>me 0% Parfum 150 ml,11,none,15,36,0,34,12,0.352941176,0
+Zwitsal,Zonnestick SPF 50+ 0% Parfum 25 g,11,Microcrystalline Wax,499,35,3,34,12,0.352941176,1
+Zwitsal,Zonnestick SPF 50+ 0% Parfum 25 g,11,Synthetic Wax,499,100,3,34,12,0.352941176,1
+Zwitsal,Zonnestick SPF 50+ 0% Parfum 25 g,11,Polyethylene,499,68,3,34,12,0.352941176,1
+Zwitsal,Original Deodorant Roller 50 ml,3,PEG-4 Laurate,292,54,4,11,8,0.727272727,1
+Zwitsal,Original Deodorant Roller 50 ml,3,Steareth-20,292,94,4,11,8,0.727272727,1
+Zwitsal,Original Deodorant Roller 50 ml,3,PEG-4 Dilaurate,292,53,4,11,8,0.727272727,1
+Zwitsal,Original Deodorant Roller 50 ml,3,Steareth-2,292,93,4,11,8,0.727272727,1
+Zwitsal,Zeepvrij Schuimbad 700 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,477,5,1,146,21,0.143835616,1
+Zwitsal,Zeepvrij Schuimbad 400 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,476,5,1,146,21,0.143835616,1
+Zwitsal,Soap Free Wash Cream 400 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,375,5,1,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wascr<U+00A8><U+00A8>me 200 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,479,5,1,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel 700 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,485,5,1,146,21,0.143835616,1
+Zwitsal,Bodylotion Melk 200 ml,0,PEG-30 Dipolyhydroxystearate,100,52,1,146,21,0.143835616,1
+Zwitsal,Lavendel Bad- en Wasgel 400 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,246,5,1,146,21,0.143835616,1
+Zwitsal,Wasschuim 200 ml,0,none,464,36,0,146,21,0.143835616,0
+Zwitsal,Zeepvrije Wasgel 75 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,486,5,1,146,21,0.143835616,1
+Zwitsal,Zeepvrij Schuimbad 700 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,477,5,1,146,21,0.143835616,1
+Zwitsal,Zinkzalf 100 ml,0,PEG-22/Dodecyl Glycol Copolymer,492,51,2,146,21,0.143835616,1
+Zwitsal,Zinkzalf 100 ml,0,Methoxy PEG-22/dodecyl Glycol Copolymer,492,34,2,146,21,0.143835616,1
+Zwitsal,Original Doucheschuim 200 ml,1,Polysorbate 20,293,81,1,39,29,0.743589744,1
+Zwitsal,Beestenboel Anti-Klit Shampoo 200 ml,0,Polyquaternium-10,81,74,2,146,21,0.143835616,1
+Zwitsal,Beestenboel Anti-Klit Shampoo 200 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,81,5,2,146,21,0.143835616,1
+Zwitsal,Shampoo 700 ml,7,Polyquaternium-10,350,74,2,48,21,0.4375,1
+Zwitsal,Shampoo 700 ml,7,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,350,5,2,48,21,0.4375,1
+Zwitsal,Bodylotion 400 ml,1,PEG-30 Dipolyhydroxystearate,97,52,1,39,29,0.743589744,1
+Zwitsal,Anti Klit Shampoo 200 ml,0,PEG-120 Methyl Glucose Dioleate,26,46,3,146,21,0.143835616,1
+Zwitsal,Anti Klit Shampoo 200 ml,0,Polyquaternium-10,26,74,3,146,21,0.143835616,1
+Zwitsal,Anti Klit Shampoo 200 ml,0,Steareth-4,26,98,3,146,21,0.143835616,1
+Zwitsal,Naturals Billencr<U+00A8><U+00A8>me 100 ml,0,none,279,36,0,146,21,0.143835616,0
+Zwitsal,Zeepvrij Schuimbad 200 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,475,5,1,146,21,0.143835616,1
+Zwitsal,Original Deodorant Roller 50 ml,0,Steareth-20,292,94,4,146,21,0.143835616,1
+Zwitsal,Original Deodorant Roller 50 ml,0,Steareth-2,292,93,4,146,21,0.143835616,1
+Zwitsal,Bodylotion 75 ml,0,PEG-30 Dipolyhydroxystearate,98,52,4,146,21,0.143835616,1
+Zwitsal,Body Mist Original 150 ml,1,none,94,36,0,39,29,0.743589744,0
+Zwitsal,Bodylotion 75 ml,0,PEG-100 Stearate,98,41,4,146,21,0.143835616,1
+Zwitsal,Bodylotion 75 ml,0,PEG-12 Dimethicone,98,43,4,146,21,0.143835616,1
+Zwitsal,Bodylotion 75 ml,0,Dimethicone,98,23,4,146,21,0.143835616,1
+Zwitsal,Anti-Klit Shampoo 200 ml,7,Polyquaternium-10,22,74,2,48,21,0.4375,1
+Zwitsal,Anti-Klit Shampoo 200 ml,7,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,22,5,2,48,21,0.4375,1
+Zwitsal,Original Deodorant Roller 50 ml,0,Steareth-20,292,94,4,146,21,0.143835616,1
+Zwitsal,Original Deodorant Roller 50 ml,0,Steareth-2,292,93,4,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,Polyquaternium-7,322,78,3,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,Styrene/Acrylates Copolymer,322,99,3,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,PEG-18 Glyceryl Oleate/Cocoate,322,47,3,146,21,0.143835616,1
+Zwitsal,Frozen Anti-Klit Shampoo 400 ml,7,Polyquaternium-10,210,74,2,48,21,0.4375,1
+Zwitsal,Frozen Anti-Klit Shampoo 400 ml,7,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,210,5,2,48,21,0.4375,1
+Zwitsal,Wasgel Zeepvrij 200 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,462,5,1,146,21,0.143835616,1
+Zwitsal,Body Mist Original 150 ml,1,none,94,36,0,39,29,0.743589744,0
+Zwitsal,Bodylotion 75 ml,0,PEG-30 Dipolyhydroxystearate,98,52,4,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel 400 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,483,5,3,146,21,0.143835616,1
+Zwitsal,Baby Shampoo 400 ml,0,Polyquaternium-10,49,74,2,146,21,0.143835616,1
+Zwitsal,Baby Shampoo 400 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,49,5,2,146,21,0.143835616,1
+Zwitsal,Sun Cream Water Resistant SPF50+ 75 ml,11,Dimethicone,388,23,2,34,12,0.352941176,1
+Zwitsal,Sun Cream Water Resistant SPF50+ 75 ml,11,Polypropylsilsesquioxane,388,73,2,34,12,0.352941176,1
+Zwitsal,Baby Shampoo 200ml,0,Polyquaternium-10,48,74,2,146,21,0.143835616,1
+Zwitsal,Baby Shampoo 200ml,0,Sodium Acrylates/C10-30 Alkyl Acrylate Crosspolymer,48,91,2,146,21,0.143835616,1
+Zwitsal,Sun Kids 0% Parfum SPF50+ Zonnespray 200 ml,11,Dimethicone,389,23,2,34,12,0.352941176,1
+Zwitsal,Sun Kids 0% Parfum SPF50+ Zonnespray 200 ml,11,Ammonium Acryloyldimethyltaurate/VP copolymer,389,10,2,34,12,0.352941176,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me,0,PEG-100 Stearate,58,41,3,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me,0,Dimethicone,58,23,3,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me,0,Ammonium Acryloyldimethyltaurate/VP copolymer,58,10,3,146,21,0.143835616,1
+Zwitsal,Baby Anti-Klit Shampoo,7,PEG-120 Methyl Glucose Dioleate,38,46,5,48,21,0.4375,1
+Zwitsal,Baby Anti-Klit Shampoo,7,Polyquaternium-10,38,74,5,48,21,0.4375,1
+Zwitsal,Baby Anti-Klit Shampoo,7,PEG-12,38,42,5,48,21,0.4375,1
+Zwitsal,Baby Anti-Klit Shampoo,7,Steareth-4,38,98,5,48,21,0.4375,1
+Zwitsal,Baby Anti-Klit Shampoo,7,PEG-120,38,45,5,48,21,0.4375,1
+Zwitsal,zeepvrije wascr<U+00A8><U+00A8>me pomp,0,Polyacrylate-33,480,62,2,146,21,0.143835616,1
+Zwitsal,zeepvrije wascr<U+00A8><U+00A8>me pomp,0,Styrene/Acrylates Copolymer,480,99,2,146,21,0.143835616,1
+Zwitsal,Baby Op 'T Wangetje Gezichtscr<U+00A8><U+00A8>me,0,Dimethicone,46,23,1,146,21,0.143835616,1
+Zwitsal,Baby Talkpoeder Navulling,0,none,53,36,0,146,21,0.143835616,0
+Zwitsal,Sun SPF50+ Zonnecr<U+00A8><U+00A8>me,11,Dimethicone,396,23,3,34,12,0.352941176,1
+Zwitsal,Sun SPF50+ Zonnecr<U+00A8><U+00A8>me,11,Ammonium Acryloyldimethyltaurate/VP copolymer,396,10,3,34,12,0.352941176,1
+Zwitsal,Sun SPF50+ Zonnecr<U+00A8><U+00A8>me,11,Polypropylsilsesquioxane,396,73,3,34,12,0.352941176,1
+Zwitsal,Sun 0% Parfum SPF50+ Zonnecr<U+00A8><U+00A8>me,11,Dimethicone,386,23,2,34,12,0.352941176,1
+Zwitsal,Sun 0% Parfum SPF50+ Zonnecr<U+00A8><U+00A8>me,11,Ammonium Acryloyldimethyltaurate/VP copolymer,386,10,2,34,12,0.352941176,1
+Zwitsal,Creme Zeep Baby,0,none,146,36,0,146,21,0.143835616,0
+Zwitsal,Baby Slaap Zacht Lavendel Body Cr<U+00A8><U+00A8>me,0,PEG-100 Stearate,52,41,3,146,21,0.143835616,1
+Zwitsal,Baby Slaap Zacht Lavendel Body Cr<U+00A8><U+00A8>me,0,Polysorbate 60,52,82,3,146,21,0.143835616,1
+Zwitsal,Baby Slaap Zacht Lavendel Body Cr<U+00A8><U+00A8>me,0,Carbomer,52,12,3,146,21,0.143835616,1
+Zwitsal,Na 't Zonnetje Aftersun Cr<U+00A8><U+00A8>me,0,Dimethicone,274,23,1,146,21,0.143835616,1
+Zwitsal,Mama Buikbalsem,1,Dimethicone,258,23,2,39,29,0.743589744,1
+Zwitsal,Mama Buikbalsem,1,PVM/MA Decadiene Crosspolymer,258,88,2,39,29,0.743589744,1
+Zwitsal,Baby Zeepvrije Wasgel,0,Polyacrylate-33,62,62,1,146,21,0.143835616,1
+Zwitsal,Baby Wascr<U+00A8><U+00A8>me,0,Polyacrylate-33,55,62,2,146,21,0.143835616,1
+Zwitsal,Baby Wascr<U+00A8><U+00A8>me,0,Styrene/Acrylates Copolymer,55,99,2,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-100 Stearate,41,41,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-12 Dimethicone,41,43,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,Dimethicone,41,23,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-12,41,42,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,PEG-120 Methyl Glucose Dioleate,47,46,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,Polyquaternium-10,47,74,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,PEG-12,47,42,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,PEG-120,47,45,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,7,PEG-120 Methyl Glucose Dioleate,47,46,4,48,21,0.4375,1
+Zwitsal,Baby Shampoo,7,Polyquaternium-10,47,74,4,48,21,0.4375,1
+Zwitsal,Baby Shampoo,7,PEG-12,47,42,4,48,21,0.4375,1
+Zwitsal,Baby Shampoo,7,PEG-120,47,45,4,48,21,0.4375,1
+Zwitsal,Shampoo,7,PEG-120 Methyl Glucose Dioleate,348,46,5,48,21,0.4375,1
+Zwitsal,Shampoo,7,Polyquaternium-16,348,75,5,48,21,0.4375,1
+Zwitsal,Shampoo,7,PEG-12,348,42,5,48,21,0.4375,1
+Zwitsal,Shampoo,7,PEG-120,348,45,5,48,21,0.4375,1
+Zwitsal,Mama Buikbalsem,1,Dimethicone,258,23,2,39,29,0.743589744,1
+Zwitsal,Mama Buikbalsem,1,PVM/MA Decadiene Crosspolymer,258,88,2,39,29,0.743589744,1
+Zwitsal,Soap-free Bubble Bath,0,Polyacrylate-33,374,62,1,146,21,0.143835616,1
+Zwitsal,Zeepvrij Schuimbad,0,Polyacrylate-33,474,62,1,146,21,0.143835616,1
+Zwitsal,Hair Lotion 200 ml,0,PEG-40 Hydrogenated Castor Oil,224,56,1,146,21,0.143835616,1
+Zwitsal,Bodylotion 200 ml,0,PEG-30 Dipolyhydroxystearate,96,52,1,146,21,0.143835616,1
+Zwitsal,Badmelk Droog Huidje 200 ml,0,Polysorbate,70,80,3,146,21,0.143835616,1
+Zwitsal,Badmelk Droog Huidje 200 ml,0,Ceteareth-12,70,13,3,146,21,0.143835616,1
+Zwitsal,Badmelk Droog Huidje 200 ml,0,Ceteareth-20,70,14,3,146,21,0.143835616,1
+Zwitsal,Wascreme 500 ml,0,PEG-120 Methyl Glucose Dioleate,457,46,4,146,21,0.143835616,1
+Zwitsal,Wascreme 500 ml,0,Polyquaternium-7,457,78,4,146,21,0.143835616,1
+Zwitsal,Wascreme 500 ml,0,Styrene/Acrylates Copolymer,457,99,4,146,21,0.143835616,1
+Zwitsal,Wascreme 500 ml,0,PEG-120,457,45,4,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,Polyquaternium-7,322,78,3,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,Styrene/Acrylates Copolymer,322,99,3,146,21,0.143835616,1
+Zwitsal,Schuimbad 400 ml,0,PEG-18 Glyceryl Oleate/Cocoate,322,47,3,146,21,0.143835616,1
+Zwitsal,Creme Handzeep Beestenboel 250 ml,0,Polyacrylate-33,144,62,1,146,21,0.143835616,1
+Zwitsal,Schuimbad Beestenboel 200 ml,0,none,323,36,0,146,21,0.143835616,0
+Zwitsal,Schuimbad Beestenboel 200 ml,0,none,323,36,0,146,21,0.143835616,0
+Zwitsal,Wasschuim 200 ml,0,Polysorbate 20,464,81,2,146,21,0.143835616,1
+Zwitsal,Cream Soap 300 ml,0,Polyacrylate-33,143,62,2,146,21,0.143835616,1
+Zwitsal,Cream Soap 300 ml,0,Styrene/Acrylates Copolymer,143,99,2,146,21,0.143835616,1
+Zwitsal,Snoetenpoetsers Doekjes Boys & Girls 40 doekjes,0,PEG-40 Hydrogenated Castor Oil,372,56,1,146,21,0.143835616,1
+Zwitsal,Naturals Micellar Water 200 ml,0,none,281,36,0,146,21,0.143835616,0
+Zwitsal,2in1 Shampoo & Douche Gel Verzorgend 400 ml,0,PEG-120 Methyl Glucose Dioleate,6,46,4,146,21,0.143835616,1
+Zwitsal,2in1 Shampoo & Douche Gel Verzorgend 400 ml,0,Polyquaternium-10,6,74,4,146,21,0.143835616,1
+Zwitsal,2in1 Shampoo & Douche Gel Verzorgend 400 ml,0,Steareth-4,6,98,4,146,21,0.143835616,1
+Zwitsal,2in1 Shampoo & Douche Gel Verzorgend 400 ml,0,PEG-120,6,45,4,146,21,0.143835616,1
+Zwitsal,Sensitive Baby Wipes 57 pieces,0,PEG-40 Hydrogenated Castor Oil,327,56,2,146,21,0.143835616,1
+Zwitsal,Sensitive Baby Wipes 57 pieces,0,PEG-10 Olive Glycerides,327,40,2,146,21,0.143835616,1
+Zwitsal,Handzeep Frozen Pomp 300 ml,0,Polyacrylate-33,230,62,2,146,21,0.143835616,1
+Zwitsal,Handzeep Frozen Pomp 300 ml,0,Styrene/Acrylates Copolymer,230,99,2,146,21,0.143835616,1
+Zwitsal,Haargel Goedemorgen 75 ml,0,PEG-18 Glyceryl Oleate/Cocoate,222,47,2,146,21,0.143835616,1
+Zwitsal,Haargel Goedemorgen 75 ml,0,Steareth-4,222,98,2,146,21,0.143835616,1
+Zwitsal,Talkpoeder 100 g,0,none,403,36,0,146,21,0.143835616,0
+Zwitsal,Schulmbad 500 ml,0,Polyacrylate-33,325,62,1,146,21,0.143835616,1
+Zwitsal,Goedemorgen Washandjes 20 stuks,0,PEG-40 Hydrogenated Castor Oil,217,56,1,146,21,0.143835616,1
+Zwitsal,Baby Olie 400 ml,0,none,45,36,0,146,21,0.143835616,0
+Zwitsal,Slaap Zacht Bad en Wasgel Lavendel 400 ml,0,Polyquaternium-7,368,78,2,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bad en Wasgel Lavendel 400 ml,0,PEG-18 Glyceryl Oleate/Cocoate,368,47,2,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haargel 75 ml,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,215,5,5,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haargel 75 ml,0,VP/Dimethylaminoethylmethacrylate Copolymer,215,106,5,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haargel 75 ml,0,Isoceteth-20,215,31,5,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haargel 75 ml,0,CETETH-20,215,18,5,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haargel 75 ml,0,Ceteth-2,215,17,5,146,21,0.143835616,1
+Zwitsal,Vochtige Zakdoekjes 20 stuks,0,Ceteareth-12,455,13,2,146,21,0.143835616,1
+Zwitsal,Vochtige Zakdoekjes 20 stuks,0,Ceteareth-20,455,14,2,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bad&Wasgel Lavendel 200ml,0,Polyquaternium-7,369,78,2,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bad&Wasgel Lavendel 200ml,0,PEG-18 Glyceryl Oleate/Cocoate,369,47,2,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,7,PEG-120 Methyl Glucose Dioleate,47,46,4,48,21,0.4375,1
+Zwitsal,Baby Shampoo,7,Polyquaternium-10,47,74,4,48,21,0.4375,1
+Zwitsal,Baby Shampoo,7,PEG-120,47,45,4,48,21,0.4375,1
+Zwitsal,Deodorant Spray Soft,3,Cyclopentasiloxane,157,22,2,11,8,0.727272727,1
+Zwitsal,Deodorant Spray Soft,3,PPG-14 Butyl Ether,157,85,2,11,8,0.727272727,1
+Zwitsal,Lotion Billendoekjes,0,PEG-40 Hydrogenated Castor Oil,250,56,1,146,21,0.143835616,1
+Zwitsal,Naturals Body Cream Baby 100 ml,0,none,280,36,0,146,21,0.143835616,0
+Zwitsal,Shower & Shampoo 2in1 Sensitive Care 200 ml,0,Polyacrylate-33,364,62,3,146,21,0.143835616,1
+Zwitsal,Shower & Shampoo 2in1 Sensitive Care 200 ml,0,Styrene/Acrylates Copolymer,364,99,3,146,21,0.143835616,1
+Zwitsal,Shower & Shampoo 2in1 Sensitive Care 200 ml,0,Dimethiconol,364,27,3,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haarlotion,0,PEG-40 Hydrogenated Castor Oil,216,56,1,146,21,0.143835616,1
+Zwitsal,Creme Zeep Baby,0,none,146,36,0,146,21,0.143835616,0
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me,0,PEG-100 Stearate,469,41,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me,0,Polysorbate 60,469,82,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me,0,Carbomer,469,12,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me,0,Dimethicone,469,23,4,146,21,0.143835616,1
+Zwitsal,Creme Zeep Woezel & Pip 250 ml,0,Polyacrylate-33,147,62,1,146,21,0.143835616,1
+Zwitsal,Zinkzalf,0,PEG-22/Dodecyl Glycol Copolymer,491,51,2,146,21,0.143835616,1
+Zwitsal,Zinkzalf,0,Methoxy PEG-22/dodecyl Glycol Copolymer,491,34,2,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bodycreme Lavendel,0,PEG-100 Stearate,370,41,4,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bodycreme Lavendel,0,Polysorbate 60,370,82,4,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bodycreme Lavendel,0,Carbomer,370,12,4,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bodycreme Lavendel,0,Dimethicone,370,23,4,146,21,0.143835616,1
+Zwitsal,Op 'T Wangetje,0,Dimethicone,289,23,1,146,21,0.143835616,1
+Zwitsal,Rijke Olie Met Avocado-Olie,0,none,302,36,0,146,21,0.143835616,0
+Zwitsal,Poeder Bus 100 gr,0,none,294,36,0,146,21,0.143835616,0
+Zwitsal,Baby gezichtscreme op 't wangetje 100 ml,0,Dimethicone,43,23,1,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me 100 ml,0,PEG-100 Stearate,59,41,4,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me 100 ml,0,Polysorbate 60,59,82,4,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me 100 ml,0,Carbomer,59,12,4,146,21,0.143835616,1
+Zwitsal,Baby Zachte Cr<U+00A8><U+00A8>me 100 ml,0,Dimethicone,59,23,4,146,21,0.143835616,1
+Zwitsal,Naturals Bath and Wash Cream 250 ml,0,none,278,36,0,146,21,0.143835616,0
+Zwitsal,Bath & Shower Cream Frozen 400 ml,0,Polyacrylate-33,74,62,2,146,21,0.143835616,1
+Zwitsal,Bath & Shower Cream Frozen 400 ml,0,Styrene/Acrylates Copolymer,74,99,2,146,21,0.143835616,1
+Zwitsal,Anti-Puncture Shampoo 75 ml,0,PEG-120 Methyl Glucose Dioleate,24,46,3,146,21,0.143835616,1
+Zwitsal,Anti-Puncture Shampoo 75 ml,0,Polyquaternium-10,24,74,3,146,21,0.143835616,1
+Zwitsal,Anti-Puncture Shampoo 75 ml,0,PEG-120,24,45,3,146,21,0.143835616,1
+Zwitsal,Shampoo Kids Star Wars 400 ml,0,PEG-120 Methyl Glucose Dioleate,357,46,4,146,21,0.143835616,1
+Zwitsal,Shampoo Kids Star Wars 400 ml,0,Polyquaternium-10,357,74,4,146,21,0.143835616,1
+Zwitsal,Shampoo Kids Star Wars 400 ml,0,Steareth-4,357,98,4,146,21,0.143835616,1
+Zwitsal,Shampoo Kids Star Wars 400 ml,0,PEG-120,357,45,4,146,21,0.143835616,1
+Zwitsal,Kids Bubble Bath Clean & Fresh Pink 280 ml,0,Olive Oil PEG-7 Esters,241,39,1,146,21,0.143835616,1
+Zwitsal,Natural Baby Bath Milk & Honey 450 ml,0,Polyacrylate-33,275,62,2,146,21,0.143835616,1
+Zwitsal,Natural Baby Bath Milk & Honey 450 ml,0,Styrene/Acrylates Copolymer,275,99,2,146,21,0.143835616,1
+Zwitsal,Natural Baby Hair Lotion 200 ml,0,PEG-40 Hydrogenated Castor Oil,276,56,2,146,21,0.143835616,1
+Zwitsal,Natural Baby Hair Lotion 200 ml,0,Trideceth-9,276,103,2,146,21,0.143835616,1
+Zwitsal,Extra Sensitive Skin Body Lotion 200 ml,0,Carbomer,172,12,2,146,21,0.143835616,1
+Zwitsal,Extra Sensitive Skin Body Lotion 200 ml,0,Dimethicone,172,23,2,146,21,0.143835616,1
+Zwitsal,Billendoekjes Babydoekjes Sensitive 57 stuks,0,PEG-40 Hydrogenated Castor Oil,82,56,2,146,21,0.143835616,1
+Zwitsal,Billendoekjes Babydoekjes Sensitive 57 stuks,0,PEG-10 Olive Glycerides,82,40,2,146,21,0.143835616,1
+Zwitsal,Talkpoeder Talc 100 g,0,none,405,36,0,146,21,0.143835616,0
+Zwitsal,Conditioner 200 ml,0,none,117,36,0,146,21,0.143835616,0
+Zwitsal,Zinkzalf Tube 100 ml,0,PEG-22/Dodecyl Glycol Copolymer,493,51,2,146,21,0.143835616,1
+Zwitsal,Zinkzalf Tube 100 ml,0,Methoxy PEG-22/dodecyl Glycol Copolymer,493,34,2,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wascreme 500 ml,0,Polyacrylate-33,481,62,2,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wascreme 500 ml,0,Styrene/Acrylates Copolymer,481,99,2,146,21,0.143835616,1
+Zwitsal,Schuimbad 200 ml,0,Polyquaternium-7,321,78,4,146,21,0.143835616,1
+Zwitsal,Schuimbad 200 ml,0,Styrene/Acrylates Copolymer,321,99,4,146,21,0.143835616,1
+Zwitsal,Schuimbad 200 ml,0,PEG-18 Glyceryl Oleate/Cocoate,321,47,4,146,21,0.143835616,1
+Zwitsal,Schuimbad 200 ml,0,Trideceth-7,321,102,4,146,21,0.143835616,1
+Zwitsal,Rijke Olie 200 ml,0,none,301,36,0,146,21,0.143835616,0
+Zwitsal,Bath & Wash Cream Cars 400 ml,0,Polyacrylate-33,75,62,2,146,21,0.143835616,1
+Zwitsal,Bath & Wash Cream Cars 400 ml,0,Styrene/Acrylates Copolymer,75,99,2,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me 200 ml,0,PEG-100 Stearate,470,41,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me 200 ml,0,Polysorbate 60,470,82,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me 200 ml,0,Carbomer,470,12,4,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me 200 ml,0,Dimethicone,470,23,4,146,21,0.143835616,1
+Zwitsal,Bad & Douchecr<U+00A8><U+00A8>me Disney Prinses 400 ml,0,PEG-120 Methyl Glucose Dioleate,66,46,4,146,21,0.143835616,1
+Zwitsal,Bad & Douchecr<U+00A8><U+00A8>me Disney Prinses 400 ml,0,Polyquaternium-7,66,78,4,146,21,0.143835616,1
+Zwitsal,Bad & Douchecr<U+00A8><U+00A8>me Disney Prinses 400 ml,0,Styrene/Acrylates Copolymer,66,99,4,146,21,0.143835616,1
+Zwitsal,Bad & Douchecr<U+00A8><U+00A8>me Disney Prinses 400 ml,0,PEG-120,66,45,4,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel 400 ml,0,PEG-120 Methyl Glucose Dioleate,483,46,3,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel 400 ml,0,PEG-120,483,45,3,146,21,0.143835616,1
+Zwitsal,Shampoo 200 ml,0,PEG-120 Methyl Glucose Dioleate,349,46,3,146,21,0.143835616,1
+Zwitsal,Shampoo 200 ml,0,Polyquaternium-10,349,74,3,146,21,0.143835616,1
+Zwitsal,Shampoo 200 ml,0,PEG-120,349,45,3,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel Soapfree wasching Gel 200ml,0,PEG-120 Methyl Glucose Dioleate,487,46,2,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel Soapfree wasching Gel 200ml,0,PEG-120,487,45,2,146,21,0.143835616,1
+Zwitsal,Body Lotion 200 ml,0,PEG-30 Dipolyhydroxystearate,92,52,1,146,21,0.143835616,1
+Zwitsal,Gevoelig Huidje 2 in 1 Shampoo & Wasgel 200 ml,0,none,211,36,0,146,21,0.143835616,0
+Zwitsal,Woezel & Pip Cr<U+00A8><U+00A8>me Zeep 300 ml,0,Polyacrylate-33,467,62,2,146,21,0.143835616,1
+Zwitsal,Woezel & Pip Cr<U+00A8><U+00A8>me Zeep 300 ml,0,Styrene/Acrylates Copolymer,467,99,2,146,21,0.143835616,1
+Zwitsal,Shampoo Met Anti prik formule,0,PEG-120 Methyl Glucose Dioleate,358,46,3,146,21,0.143835616,1
+Zwitsal,Shampoo Met Anti prik formule,0,Polyquaternium-10,358,74,3,146,21,0.143835616,1
+Zwitsal,Shampoo Met Anti prik formule,0,PEG-120,358,45,3,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-100 Stearate,41,41,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-12 Dimethicone,41,43,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,Dimethicone,41,23,4,146,21,0.143835616,1
+Zwitsal,Mini Shampoo met anti-prik formule,0,PEG-120 Methyl Glucose Dioleate,271,46,3,146,21,0.143835616,1
+Zwitsal,Mini Shampoo met anti-prik formule,0,Polyquaternium-10,271,74,3,146,21,0.143835616,1
+Zwitsal,Mini Shampoo met anti-prik formule,0,PEG-120,271,45,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Baby,0,PEG-100 Stearate,471,41,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Baby,0,Dimethicone,471,23,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Baby,0,Ammonium Acryloyldimethyltaurate/VP copolymer,471,10,3,146,21,0.143835616,1
+Zwitsal,Goedemorgen Haar Lotion Baby,0,PEG-40 Hydrogenated Castor Oil,214,56,1,146,21,0.143835616,1
+Zwitsal,Badolie Baby,0,PEG-40 Sorbitan Peroleate,71,57,1,146,21,0.143835616,1
+Zwitsal,Baby Zeepvrije Wascr<U+00A8><U+00A8>me,0,Polyacrylate-33,61,62,2,146,21,0.143835616,1
+Zwitsal,Baby Zeepvrije Wascr<U+00A8><U+00A8>me,0,Styrene/Acrylates Copolymer,61,99,2,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-klit,0,PEG-120 Methyl Glucose Dioleate,351,46,4,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-klit,0,Polyquaternium-10,351,74,4,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-klit,0,Steareth-4,351,98,4,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-klit,0,PEG-120,351,45,4,146,21,0.143835616,1
+Zwitsal,Zwitsal,0,Polyacrylate-33,500,62,2,146,21,0.143835616,1
+Zwitsal,Zwitsal,0,Styrene/Acrylates Copolymer,500,99,2,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel,0,Polyacrylate-33,482,62,1,146,21,0.143835616,1
+Zwitsal,Wasgel zeepvrij - extra mild en zacht,0,Polyacrylate-33,461,62,1,146,21,0.143835616,1
+Zwitsal,Wasgel Baby - Hydrateert het babyhuidje,0,Polyacrylate-33,458,62,1,146,21,0.143835616,1
+Zwitsal,Creme Zeep,0,Polyacrylate-33,145,62,1,146,21,0.143835616,1
+Zwitsal,Zeepvrij Schuimbad Baby,0,Polyacrylate-33,478,62,1,146,21,0.143835616,1
+Zwitsal,Baby Zeepvrij Schuimbad,0,Polyacrylate-33,60,62,1,146,21,0.143835616,1
+Zwitsal,Baby Badschuim 400 ml,0,Polyacrylate-33,39,62,1,146,21,0.143835616,1
+Zwitsal,Zonnespray Voor Baby- en Kinderhuid SPF 50+,0,Dimethicone,498,23,2,146,21,0.143835616,1
+Zwitsal,Zonnespray Voor Baby- en Kinderhuid SPF 50+,0,Ammonium Acryloyldimethyltaurate/VP copolymer,498,10,2,146,21,0.143835616,1
+Zwitsal,Bad & Wasgel Lavendel,0,Polyacrylate-33,68,62,1,146,21,0.143835616,1
+Zwitsal,Bad & Wasgel Eucalyptus,0,Polyacrylate-33,67,62,1,146,21,0.143835616,1
+Zwitsal,Slaap Zacht Bad & Wasgel Lavendel Baby,0,Polyacrylate-33,367,62,1,146,21,0.143835616,1
+Zwitsal,Bad&Wasgel Eucalyptus,0,Polyacrylate-33,69,62,1,146,21,0.143835616,1
+Zwitsal,Huidolie,0,none,233,36,0,146,21,0.143835616,0
+Zwitsal,Baby Haargel,0,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,44,5,5,146,21,0.143835616,1
+Zwitsal,Baby Haargel,0,VP/Dimethylaminoethylmethacrylate Copolymer,44,106,5,146,21,0.143835616,1
+Zwitsal,Baby Haargel,0,Isoceteth-20,44,31,5,146,21,0.143835616,1
+Zwitsal,Baby Haargel,0,CETETH-20,44,18,5,146,21,0.143835616,1
+Zwitsal,Baby Haargel,0,Ceteth-2,44,17,5,146,21,0.143835616,1
+Zwitsal,Wasgel Woezel & Pip,0,Polyacrylate-33,459,62,1,146,21,0.143835616,1
+Zwitsal,Woezel & Pip Anti-Klit Babyshampoo - Zeepvrij,0,PEG-120 Methyl Glucose Dioleate,466,46,4,146,21,0.143835616,1
+Zwitsal,Woezel & Pip Anti-Klit Babyshampoo - Zeepvrij,0,Polyquaternium-10,466,74,4,146,21,0.143835616,1
+Zwitsal,Woezel & Pip Anti-Klit Babyshampoo - Zeepvrij,0,Steareth-4,466,98,4,146,21,0.143835616,1
+Zwitsal,Woezel & Pip Anti-Klit Babyshampoo - Zeepvrij,0,PEG-120,466,45,4,146,21,0.143835616,1
+Zwitsal,Zachte Creme Pot,0,PEG-100 Stearate,473,41,3,146,21,0.143835616,1
+Zwitsal,Zachte Creme Pot,0,Dimethicone,473,23,3,146,21,0.143835616,1
+Zwitsal,Zachte Creme Pot,0,Ammonium Acryloyldimethyltaurate/VP copolymer,473,10,3,146,21,0.143835616,1
+Zwitsal,Rijke Huidolie Avocado,0,none,300,36,0,146,21,0.143835616,0
+Zwitsal,Baby Bodylotion,0,PEG-100 Stearate,41,41,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,PEG-12 Dimethicone,41,43,4,146,21,0.143835616,1
+Zwitsal,Baby Bodylotion,0,Dimethicone,41,23,4,146,21,0.143835616,1
+Zwitsal,Wasschuim,0,Polysorbate 20,463,81,1,146,21,0.143835616,1
+Zwitsal,Bodylotion Baby,0,PEG-100 Stearate,99,41,3,146,21,0.143835616,1
+Zwitsal,Bodylotion Baby,0,PEG-12 Dimethicone,99,43,3,146,21,0.143835616,1
+Zwitsal,Bodylotion Baby,0,Dimethicone,99,23,3,146,21,0.143835616,1
+Zwitsal,Baby Wasgel Mini,0,none,57,36,0,146,21,0.143835616,0
+Zwitsal,Talkpoeder Baby,0,none,404,36,0,146,21,0.143835616,0
+Zwitsal,Baby Zinkzalf Tube,0,PEG-22/Dodecyl Glycol Copolymer,63,51,1,146,21,0.143835616,1
+Zwitsal,Baby Wasgel,0,Polyacrylate-33,56,62,1,146,21,0.143835616,1
+Zwitsal,Baby Zeepvrije Wascr<U+00A8><U+00A8>me,0,Polyacrylate-33,61,62,2,146,21,0.143835616,1
+Zwitsal,Baby Zeepvrije Wascr<U+00A8><U+00A8>me,0,Styrene/Acrylates Copolymer,61,99,2,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel,0,Polyacrylate-33,482,62,1,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel,0,Polyacrylate-33,482,62,1,146,21,0.143835616,1
+Zwitsal,Zeepvrije Wasgel 400ml,0,Polyacrylate-33,484,62,1,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,PEG-120 Methyl Glucose Dioleate,47,46,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,Polyquaternium-10,47,74,4,146,21,0.143835616,1
+Zwitsal,Baby Shampoo,0,PEG-120,47,45,4,146,21,0.143835616,1
+Zwitsal,Anti-Klit Shampoo 500ml,0,PEG-12,23,42,3,146,21,0.143835616,1
+Zwitsal,Anti-Klit Shampoo 500ml,0,Steareth-4,23,98,3,146,21,0.143835616,1
+Zwitsal,Anti-Klit Shampoo 500ml,0,PEG-120,23,45,3,146,21,0.143835616,1
+Zwitsal,Baby Anti-Klit Shampoo,0,PEG-120 Methyl Glucose Dioleate,38,46,5,146,21,0.143835616,1
+Zwitsal,Baby Anti-Klit Shampoo,0,Polyquaternium-10,38,74,5,146,21,0.143835616,1
+Zwitsal,Baby Anti-Klit Shampoo,0,Steareth-4,38,98,5,146,21,0.143835616,1
+Zwitsal,Baby Anti-Klit Shampoo,0,PEG-120,38,45,5,146,21,0.143835616,1
+Zwitsal,Baby Shampoo met anti-prik formule,0,PEG-120 Methyl Glucose Dioleate,50,46,3,146,21,0.143835616,1
+Zwitsal,Baby Shampoo met anti-prik formule,0,Polyquaternium-10,50,74,3,146,21,0.143835616,1
+Zwitsal,Baby Shampoo met anti-prik formule,0,PEG-120,50,45,3,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-Prik 400ml,0,PEG-120 Methyl Glucose Dioleate,352,46,3,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-Prik 400ml,0,Polyquaternium-10,352,74,3,146,21,0.143835616,1
+Zwitsal,Shampoo Anti-Prik 400ml,0,PEG-120,352,45,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Tube,0,PEG-100 Stearate,472,41,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Tube,0,Dimethicone,472,23,3,146,21,0.143835616,1
+Zwitsal,Zachte Cr<U+00A8><U+00A8>me Tube,0,Ammonium Acryloyldimethyltaurate/VP copolymer,472,10,3,146,21,0.143835616,1
+Zwitsal,Babyolie,0,none,65,36,0,146,21,0.143835616,0
+Zwitsal,Bodylotion Mini,0,PEG-100 Stearate,101,41,3,146,21,0.143835616,1
+Zwitsal,Bodylotion Mini,0,PEG-12 Dimethicone,101,43,3,146,21,0.143835616,1
+Zwitsal,Bodylotion Mini,0,Dimethicone,101,23,3,146,21,0.143835616,1
+Zwitsal,Badolie Baby,0,PEG-40 Sorbitan Peroleate,71,57,1,146,21,0.143835616,1
+Zwitsal,Baby Slaap Zacht Baby Massage Olie Lavendel,0,Hydrogenated Styrene/Isoprene Copolymer,51,29,1,146,21,0.143835616,1
+Zwitsal,Woezel En Pip Badschuim Baby,0,Polyacrylate-33,468,62,1,146,21,0.143835616,1
+Zwitsal,Schuimbad,0,Polyacrylate-33,320,62,1,146,21,0.143835616,1
+Zwitsal,Wasgel Zeepvrij,0,Polyacrylate-33,460,62,1,146,21,0.143835616,1
+Zwitsal,Shampoo,0,PEG-120 Methyl Glucose Dioleate,348,46,5,146,21,0.143835616,1
+Zwitsal,Shampoo,0,Polyquaternium-10,348,74,5,146,21,0.143835616,1
+Zwitsal,Shampoo,0,PEG-120,348,45,5,146,21,0.143835616,1
+Zwitsal,Schuimbad Zeepvrij,0,Polyacrylate-33,324,62,1,146,21,0.143835616,1
+Zwitsal,Good Morning Hair Lotion Baby 200 ml,0,PEG-40 Hydrogenated Castor Oil,219,56,1,146,21,0.143835616,1
+Zwitsal,Cream sensitive skin 100 ml,0,Carbomer,142,12,1,146,21,0.143835616,1
+Zwitsal,Shampoo Mini,0,PEG-120 Methyl Glucose Dioleate,359,46,3,146,21,0.143835616,1
+Zwitsal,Shampoo Mini,0,Polyquaternium-10,359,74,3,146,21,0.143835616,1
+Zwitsal,Shampoo Mini,0,PEG-120,359,45,3,146,21,0.143835616,1
+Zwitsal,Zinkzalf,0,PEG-22/Dodecyl Glycol Copolymer,491,51,2,146,21,0.143835616,1
+Zwitsal,Zinkzalf,0,Methoxy PEG-22/dodecyl Glycol Copolymer,491,34,2,146,21,0.143835616,1
+Zwitsal,Babycr<U+00A8><U+00A8>me Extra Gevoelig Huidje 75 ml,0,Dimethicone,64,23,1,146,21,0.143835616,1
+Zwitsal,Kids Shampoo Anti-Klit Frozen 400 ml,7,PEG-120 Methyl Glucose Dioleate,242,46,4,48,21,0.4375,1
+Zwitsal,Kids Shampoo Anti-Klit Frozen 400 ml,7,Polyquaternium-10,242,74,4,48,21,0.4375,1
+Zwitsal,Kids Shampoo Anti-Klit Frozen 400 ml,7,Steareth-4,242,98,4,48,21,0.4375,1
+Zwitsal,Kids Shampoo Anti-Klit Frozen 400 ml,7,PEG-120,242,45,4,48,21,0.4375,1
+Zwitsal,Baby Cologne Fresh Floral,0,PEG-40 Hydrogenated Castor Oil,42,56,1,146,21,0.143835616,1
+Zwitsal,Deodorant Original Zacht voor de huid 100 ML,3,Cyclopentasiloxane,155,22,1,11,8,0.727272727,1
+Zwitsal,Zonnebrand Zonnecreme Factor(spf)30+,11,none,494,36,0,34,12,0.352941176,0
+Zwitsal,Body Cr<U+00A8><U+00A8>me Slaap Zacht Lavendel,0,PEG-100 Stearate,90,41,3,146,21,0.143835616,1
+Zwitsal,Body Cr<U+00A8><U+00A8>me Slaap Zacht Lavendel,0,Dimethicone,90,23,3,146,21,0.143835616,1
+Zwitsal,Body Cr<U+00A8><U+00A8>me Slaap Zacht Lavendel,0,Ammonium Acryloyldimethyltaurate/VP copolymer,90,10,3,146,21,0.143835616,1
+Zovirax,Koortslip Cr<U+00A8><U+00A8>me,9,none,244,36,0,17,16,0.941176471,0
+Zoeva,Cocoa Blend Eyeshadow Palette 10 Colors,4,Cyclopentasiloxane,115,22,5,6,2,0.333333333,1
+Zoeva,Cocoa Blend Eyeshadow Palette 10 Colors,4,Dimethicone,115,23,5,6,2,0.333333333,1
+Zoeva,Cocoa Blend Eyeshadow Palette 10 Colors,4,Nylon 12,115,38,5,6,2,0.333333333,1
+Zoeva,Cocoa Blend Eyeshadow Palette 10 Colors,4,Polybutene,115,65,5,6,2,0.333333333,1
+Zoeva,Cocoa Blend Eyeshadow Palette 10 Colors,4,Dimethiconol,115,27,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Voyager Eye Palette,4,Cyclopentasiloxane,105,22,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Voyager Eye Palette,4,Dimethicone,105,23,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Voyager Eye Palette,4,Nylon 12,105,38,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Voyager Eye Palette,4,Polybutene,105,65,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Voyager Eye Palette,4,Dimethiconol,105,27,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Eyeshadow Palette,4,Cyclopentasiloxane,104,22,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Eyeshadow Palette,4,Dimethicone,104,23,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Eyeshadow Palette,4,Nylon 12,104,38,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Eyeshadow Palette,4,Polybutene,104,65,5,6,2,0.333333333,1
+Zoeva,Caramel Melange Eyeshadow Palette,4,Dimethiconol,104,27,5,6,2,0.333333333,1
+Zoeva,Eyeshadow Smoky Textured Pallete,4,Dimethicone,173,23,4,6,2,0.333333333,1
+Zoeva,Eyeshadow Smoky Textured Pallete,4,Nylon,173,37,4,6,2,0.333333333,1
+Zoeva,Eyeshadow Smoky Textured Pallete,4,Polybutene,173,65,4,6,2,0.333333333,1
+Zoeva,Eyeshadow Smoky Textured Pallete,4,Dimethiconol,173,27,4,6,2,0.333333333,1
+Zoella Beauty,Snow Balmy Lip Balms Gift Set,9,Synthetic Wax,373,100,2,17,16,0.941176471,1
+Zoella Beauty,Snow Balmy Lip Balms Gift Set,9,Polybutene,373,65,2,17,16,0.941176471,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Cetyl PEG/PPG-10/1 Dimethicone,287,19,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Cyclopentasiloxane,287,22,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Polymethyl Methacrylate,287,72,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Dimethicone Crosspolymer,287,24,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Dimethiconol,287,27,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,polyglyceryl-3 polydimethylsiloxyethyl dimethicone,287,70,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Dimethicone/Vinyl Dimethicone Crosspolymer,287,26,8,34,12,0.352941176,1
+Zo Skin Health,Oclipse Sunscreen + Primer SPF30 Protection 30 ml,11,Phenyl Trimethicone,287,60,8,34,12,0.352941176,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,PEG-100 Stearate,150,41,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Polysorbate 60,150,82,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Acrylates/Dimethicone Copolymer,150,6,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,150,30,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Polymethyl Methacrylate,150,72,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Styrene/Acrylates Copolymer,150,99,7,50,21,0.42,1
+Zo Skin Health,Daily Sheer Broad Spectrum SPF50 45 ml,6,Caprylyl Methicone,150,11,7,50,21,0.42,1
+Zo Skin Health,Hydrating Cleanser 200 ml,6,PEG-100 Stearate,238,41,3,50,21,0.42,1
+Zo Skin Health,Hydrating Cleanser 200 ml,6,Acrylates Copolymer,238,2,3,50,21,0.42,1
+Zo Skin Health,Hydrating Cleanser 200 ml,6,Polyquaternium-51,238,77,3,50,21,0.42,1
+Zo Skin Health,Health Hydrating Creme 113 g,6,Cyclopentasiloxane,232,22,2,50,21,0.42,1
+Zo Skin Health,Health Hydrating Creme 113 g,6,Polymethyl Methacrylate,232,72,2,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Cyclopentasiloxane,102,22,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,PEG-100 Stearate,102,41,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Polysorbate 20,102,81,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Polysorbate 80,102,83,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Acrylamide/Ammonium Acrylate Copolymer,102,1,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Carbomer,102,12,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Polyisobutene,102,71,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Polymethyl Methacrylate,102,72,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,PEG-12 Dimethicone/PPG-20 Crosspolymer,102,44,10,50,21,0.42,1
+Zo Skin Health,Brightalive Non-Retinol Skin Brightener 50 ml,6,Caprylyl Methicone,102,11,10,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Antioxidant 1 oz,6,Cyclohexasiloxane,148,20,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Antioxidant 1 oz,6,Cyclopentasiloxane,148,22,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Antioxidant 1 oz,6,Polysorbate 20,148,81,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Antioxidant 1 oz,6,Carbomer,148,12,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Antioxidant 1 oz,6,Steareth-20,148,94,5,50,21,0.42,1
+Zo Skin Health,Exfoliating Polish 0.57 oz,6,PEG-100 Stearate,168,41,2,50,21,0.42,1
+Zo Skin Health,Exfoliating Polish 0.57 oz,6,PEG-8,168,59,2,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,PEG-100 Stearate,371,41,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Acrylates Crosspolymer-4,371,3,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Acrylates/Ammonium Methacrylate Copolymer,371,4,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Dimethicone,371,23,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Polymethyl Methacrylate,371,72,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Styrene/Acrylates Copolymer,371,99,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Steareth-21,371,95,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Dimethicone/Vinyl Dimethicone Crosspolymer,371,26,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Dimethicone/Divinyldimethicone/Silsesquioxane Crosspolymer,371,25,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Polyamide-5,371,64,11,50,21,0.42,1
+Zo Skin Health,Smart Tone Broad Spectrum SPF50 45 ml,6,Polyamide,371,63,11,50,21,0.42,1
+Zo Skin Health,Exfoliating Aggressive Anti-Aging Program,6,PEG-100 Stearate,165,41,3,50,21,0.42,1
+Zo Skin Health,Exfoliating Aggressive Anti-Aging Program,6,Acrylates Copolymer,165,2,3,50,21,0.42,1
+Zo Skin Health,Exfoliating Aggressive Anti-Aging Program,6,Polyquaternium-51,165,77,3,50,21,0.42,1
+Zo Skin Health,Exfoliating Cleanser Normal to Oily Skin 200 ml,6,Acrylates Copolymer,167,2,1,50,21,0.42,1
+Zo Skin Health,Exfoliating Cleanser 2 oz,6,Acrylates Copolymer,166,2,1,50,21,0.42,1
+Zo Skin Health,Exfoliation Accelerator 50 ml,6,Dimethicone,169,23,1,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Clinically Proven 50 ml,6,Cyclohexasiloxane,149,20,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Clinically Proven 50 ml,6,Cyclopentasiloxane,149,22,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Clinically Proven 50 ml,6,Polysorbate 20,149,81,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Clinically Proven 50 ml,6,Carbomer,149,12,5,50,21,0.42,1
+Zo Skin Health,Daily Power Defense Clinically Proven 50 ml,6,Steareth-20,149,94,5,50,21,0.42,1
+Zo Skin Health,10% Vitamin C Self-Activating 20 ml,6,Cyclopentasiloxane,5,22,2,50,21,0.42,1
+Zo Skin Health,10% Vitamin C Self-Activating 20 ml,6,Dimethicone Crosspolymer,5,24,2,50,21,0.42,1
+ZINDEO,Roll on deodorant,3,none,303,36,0,11,8,0.727272727,0
+ZINDEO,Antiodorant cream,3,none,34,36,0,11,8,0.727272727,0
+ZINDEO,Antiodorant cream with Tea Tree oil,3,none,35,36,0,11,8,0.727272727,0
+ZINDEO,Spa salt soap,1,none,379,36,0,39,29,0.743589744,0
+ZINDEO,Dead Sea salt soap,1,none,151,36,0,39,29,0.743589744,0
+ZINDEO,Black salt soap,1,none,84,36,0,39,29,0.743589744,0
+ZINDEO,Rose salt soap,1,none,305,36,0,39,29,0.743589744,0
+Ziaja,Sensitive Enzim Peeling 60 ml,6,Polysorbate 20,336,81,2,50,21,0.42,1
+Ziaja,Sensitive Enzim Peeling 60 ml,6,Carbomer,336,12,2,50,21,0.42,1
+Ziaja,Manuka Tree Purifying Facial Toner 200 ml,6,Polysorbate 20,259,81,1,50,21,0.42,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,Microcrystalline Wax,227,35,6,11,4,0.363636364,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,PEG-100 Stearate,227,41,6,11,4,0.363636364,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,Polysorbate 80,227,83,6,11,4,0.363636364,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,Dimethicone,227,23,6,11,4,0.363636364,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,227,90,6,11,4,0.363636364,1
+Ziaja,Hand Cream Silk Proteins Provitamin B5 100 ml,8,Sodium Polyacrylate,227,92,6,11,4,0.363636364,1
+Ziaja,Acai Berry Face Toner With Hyaluronic Acid Spray 200 ml,6,Polysorbate 20,11,81,1,50,21,0.42,1
+Ziaja,Goat's Milk Hand & Nail Cream 80 ml,8,Polyacrylamide,212,61,5,11,4,0.363636364,1
+Ziaja,Goat's Milk Hand & Nail Cream 80 ml,8,Laureth-7,212,33,5,11,4,0.363636364,1
+Ziaja,Goat's Milk Hand & Nail Cream 80 ml,8,Dimethiconol,212,27,5,11,4,0.363636364,1
+Ziaja,Goat's Milk Hand & Nail Cream 80 ml,8,Cyclomethicone,212,21,5,11,4,0.363636364,1
+Ziaja,Goat's Milk Hand & Nail Cream 80 ml,8,PEG-20 Stearate,212,49,5,11,4,0.363636364,1
+Ziaja,Acai Berry Micellar Face Cleansing Scrub Gel 200 ml,6,PEG-40 Hydrogenated Castor Oil,12,56,3,50,21,0.42,1
+Ziaja,Acai Berry Micellar Face Cleansing Scrub Gel 200 ml,6,PPG-26-Buteth-26,12,87,3,50,21,0.42,1
+Ziaja,Acai Berry Micellar Face Cleansing Scrub Gel 200 ml,6,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,12,5,3,50,21,0.42,1
+Ziaja,Rose Butter 30+ Body Micro-Peeling 60 ml,6,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,304,5,2,50,21,0.42,1
+Ziaja,Rose Butter 30+ Body Micro-Peeling 60 ml,6,Polyethylene,304,68,2,50,21,0.42,1
+Ziaja,Goat's Milk Siliceous Micro-Scrub 75 ml,6,Carbomer,213,12,2,50,21,0.42,1
+Ziaja,Goat's Milk Siliceous Micro-Scrub 75 ml,6,Dimethicone,213,23,2,50,21,0.42,1
+Ziaja,T<U+00A8><U+00AE>nico Facial Calendula 200 ml,6,PEG-40 Hydrogenated Castor Oil,402,56,2,50,21,0.42,1
+Ziaja,T<U+00A8><U+00AE>nico Facial Calendula 200 ml,6,PPG-26-Buteth-26,402,87,2,50,21,0.42,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Polysorbate 80,378,83,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,PPG-15 Stearyl Ether,378,86,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Carbomer,378,12,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Dimethicone,378,23,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Sodium Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,378,90,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Steareth-2,378,93,7,34,12,0.352941176,1
+Ziaja,Sopot Sun Mleczko do Cia<U+0142>a po Opalaniu z Wapniem 200 ml,11,Steareth-21,378,95,7,34,12,0.352941176,1
+Ziaja,Antioxidant Face Cream SPF50+ 50ml,11,PEG-100 Stearate,36,41,3,34,12,0.352941176,1
+Ziaja,Antioxidant Face Cream SPF50+ 50ml,11,Carbomer,36,12,3,34,12,0.352941176,1
+Ziaja,Antioxidant Face Cream SPF50+ 50ml,11,Dimethicone,36,23,3,34,12,0.352941176,1
+Zero Waste Path,Shea Butter Soap Bar,1,none,363,36,0,39,29,0.743589744,0
+Zero Waste Path,Activated Charcoal,1,none,13,36,0,39,29,0.743589744,0
+Zero Waste Path,Lavender Soap Bar,1,none,248,36,0,39,29,0.743589744,0
+Zero Waste Path,Oatmeal Soap Bar,1,none,286,36,0,39,29,0.743589744,0
+Zero Waste Path,Aloe Vera Soap Bar,1,none,20,36,0,39,29,0.743589744,0
+Zero Waste Path,Red Clay Soap Bar,1,none,299,36,0,39,29,0.743589744,0
+Zero Waste Path,Rosemary Mint Shampoo Bar,7,none,306,36,0,48,21,0.4375,0
+Zero Waste Path,Coconut Milk Shampoo Bar,7,none,116,36,0,48,21,0.4375,0
+Zero Waste Path,Lavender Shampoo Bar,7,none,247,36,0,48,21,0.4375,0
+Zero Waste Path,Aloe Vera Shampoo Bar,7,none,19,36,0,48,21,0.4375,0
+Zero Waste Path,"2in1 Shampoo + Conditioner - Normal Hair (soon will be renamed ""All Hair Types""",7,none,10,36,0,48,21,0.4375,0
+Zero Waste Path,2in1 Shampoo + Conditioner - Dry + Curly Hair,7,none,8,36,0,48,21,0.4375,0
+Zero Waste Path,2in1 Shampoo + Condiitoner - Oily + Fine,7,none,7,36,0,48,21,0.4375,0
+Zero Waste Path,2in1 Shampoo + Conditioner - Itchy Scalp,7,none,9,36,0,48,21,0.4375,0
+Zero Waste Path,Deodorant - Lavender + Tea Tree,3,none,154,36,0,11,8,0.727272727,0
+Zero Waste Path,Deodorant - Grapefruit + Lemongrass,3,none,153,36,0,11,8,0.727272727,0
+Zero Waste Path,Unscented Lotion,1,none,427,36,0,39,29,0.743589744,0
+Zero Waste Path,Floral Lotion,1,none,176,36,0,39,29,0.743589744,0
+Zero Waste Path,Citrus Lotion,1,none,107,36,0,39,29,0.743589744,0
+Zero Waste Path,Sweet Lotion,1,none,401,36,0,39,29,0.743589744,0
+Zero Waste Path,Almighty Balm,6,none,17,36,0,50,21,0.42,0
+Zero Waste Path,Happy Balm,6,none,231,36,0,50,21,0.42,0
+Zero Waste Path,Chill Ya Balm,6,none,106,36,0,50,21,0.42,0
+Zero Waste Path,Balsamic Balm,6,none,72,36,0,50,21,0.42,0
+Zero Waste Path,Bliss Beauty Oil,7,none,85,36,0,48,21,0.4375,0
+Zero Waste Path,Bliss Beauty Oil (Refill),7,none,86,36,0,48,21,0.4375,0
+Zero,Body Lotion Caring and Moisturising 350 ml,1,Carbomer,93,12,1,39,29,0.743589744,1
+Zero,Sensitive Skin Hand Wash 350 ml,8,PEG-7 Glyceryl Cocoate,342,58,1,11,4,0.363636364,1
+Zero,Cr<U+00A8><U+00A8>me pour les Mains Sensitive Skin 75 ml,8,Carbomer,126,12,1,11,4,0.363636364,1
+ZENZ,Organic Shampoo No. 04 Sweet Sense 250 ml,7,PEG-4 Rapeseedamide,291,55,1,48,21,0.4375,1
+ZENZ,Therapy Volumizing Shampoo Amaranth 300 ml,7,Acrylates Crosspolymer-4,419,3,2,48,21,0.4375,1
+ZENZ,Therapy Volumizing Shampoo Amaranth 300 ml,7,Polyquaternium-7,419,78,2,48,21,0.4375,1
+ZENZ,Deep Wood No 07 Anti-Roos Shampoo 250 ml,7,PEG-4 Rapeseedamide,152,55,1,48,21,0.4375,1
+ZENZ,Organic Deep Wood No. 7 Shampoo 785 ml,7,PEG-4 Rapeseedamide,290,55,1,48,21,0.4375,1
+ZENZ,Shampoo Pure No 01 250 ml,7,PEG-4 Rapeseedamide,360,55,1,48,21,0.4375,1
+ZENZ,Styling Paste Pure 06 50 ml,7,Ceteareth-30,384,16,1,48,21,0.4375,1
+ZENZ,Hair Styling Mousse Pure No 90 200 ml,7,PEG-7 Glyceryl Cocoate,225,58,3,48,21,0.4375,1
+ZENZ,Hair Styling Mousse Pure No 90 200 ml,7,PVP,225,89,3,48,21,0.4375,1
+ZENZ,Hair Styling Mousse Pure No 90 200 ml,7,Polyquaternium-72,225,79,3,48,21,0.4375,1
+ZENZ,Conditioner Sweet Sense No 05 250 ml,7,none,120,36,0,48,21,0.4375,0
+ZENZ,Shampoo Eucalyptus No 10 250 ml,7,PEG-4 Rapeseedamide,356,55,1,48,21,0.4375,1
+ZENZ,Conditioner Deep Wood No 08 250 ml,7,none,118,36,0,48,21,0.4375,0
+ZENZ,Styling Paste Pure No 06 150 ml,7,Ceteareth-30,385,16,1,48,21,0.4375,1
+ZENZ,Conditioner Eucalyptus No 11 250 ml,7,none,119,36,0,48,21,0.4375,0
+ZENZ,Finishing Hair Spray Pure No 88 200 ml,7,VP/VA copolymer,175,108,1,48,21,0.4375,1
+ZENZ,Therapy Nourishing Conditioner Rosehip 300 ml,7,Ceteareth-25,418,15,3,48,21,0.4375,1
+ZENZ,Therapy Nourishing Conditioner Rosehip 300 ml,7,Polyester-11,418,67,3,48,21,0.4375,1
+ZENZ,Therapy Nourishing Conditioner Rosehip 300 ml,7,Polyester,418,66,3,48,21,0.4375,1
+ZENZ,Sculpting Cream Sweetmint 100 ml,7,PVP,326,89,2,48,21,0.4375,1
+ZENZ,Sculpting Cream Sweetmint 100 ml,7,Ceteareth-20,326,14,2,48,21,0.4375,1
+ZENZ,Treatment Shampoo Rhassoul 16 75 ml,7,none,425,36,0,48,21,0.4375,0
+ZENZ,Shampoo Deep Wood No 07 50 ml,7,PEG-4 Rapeseedamide,355,55,1,48,21,0.4375,1
+ZENZ,Salt Water Spray Pure No 14 200 ml,7,PVP,319,89,1,48,21,0.4375,1
+ZENZ,Styling Gel Sweet Orange No 12 130 ml,7,none,383,36,0,48,21,0.4375,0
+ZENZ,Wax Pure No 09 75 ml,7,Ceteareth-30,465,16,1,48,21,0.4375,1
+ZENZ,AntiAge Face Cream Deep Wood No 100 100 ml,6,Polysorbate,27,80,2,50,21,0.42,1
+ZENZ,AntiAge Face Cream Deep Wood No 100 100 ml,6,Carbomer,27,12,2,50,21,0.42,1
+Zenova,Sensitive Sonnencreme SPF20 200 ml,11,none,343,36,0,34,12,0.352941176,0
+Zenova,Zonnebrandolie SPF6 200 ml,11,none,495,36,0,34,12,0.352941176,0
+Zenova,Sun Roller Kids SPF50+ 100 ml,11,Triacontanyl PVP,395,101,1,34,12,0.352941176,1
+Zenova,Sun Spray SPF20 200 ml,11,none,397,36,0,34,12,0.352941176,0
+Zenova,Spray Solaire SPF50 Water Resistant 200 ml,11,Triacontanyl PVP,382,101,1,34,12,0.352941176,1
+Zenova,Cr<U+00A8><U+00A8>me Solaire Visage SPF30 100 ml,11,none,127,36,0,34,12,0.352941176,0
+Zenova,Suncare Aftersun Spray Cooling Effect 200 ml,11,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,399,5,2,34,12,0.352941176,1
+Zenova,Suncare Aftersun Spray Cooling Effect 200 ml,11,Carbomer,399,12,2,34,12,0.352941176,1
+Zenova,Sun Milk SPF50 Sensitive 200 ml,11,Triacontanyl PVP,393,101,1,34,12,0.352941176,1
+Zenova,Aloe Vera Cooling Gel 200 ml,1,Polysorbate 20,18,81,2,39,29,0.743589744,1
+Zenova,Aloe Vera Cooling Gel 200 ml,1,Carbomer,18,12,2,39,29,0.743589744,1
+Zenova,Aftersun Milk with Menthol 200 ml,11,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,16,5,2,34,12,0.352941176,1
+Zenova,Aftersun Milk with Menthol 200 ml,11,Carbomer,16,12,2,34,12,0.352941176,1
+Zenova,Sun Clear & Protect Spray SPF30 Water Resistant 200 ml,11,VA/Butyl Maleate/Isobornyl Acrylate Copolymer,387,105,1,34,12,0.352941176,1
+Zenova,Zonnespray Kids SPF 50+ Vitamine E 200 ml,11,Triacontanyl PVP,496,101,1,34,12,0.352941176,1
+Zenova,Protect & Bronze SPF20 200 ml,11,none,296,36,0,34,12,0.352941176,0
+Zenova,Sun Milk Water Resistant SPF 30 50 ml,11,none,394,36,0,34,12,0.352941176,0
+Zenova,Suncare Sunspray SPF30,11,none,400,36,0,34,12,0.352941176,0
+Zenova,Sun Milk Sensitive SPF30,11,none,390,36,0,34,12,0.352941176,0
+Zenova,Kids Sun Milk SPF50 Sensitive 200 ml,11,Triacontanyl PVP,243,101,1,34,12,0.352941176,1
+Zenova,Sun Spray Sport Transparent SPF30 200 ml,11,Trimethylpentanediol/Adipic Acid/Glycerin Crosspolymer,398,104,1,34,12,0.352941176,1
+Zenova,Sun Milk Sensitive Water Resistant SPF50 50 ml,11,Triacontanyl PVP,392,101,1,34,12,0.352941176,1
+Zenova,Zonnespray Kids SPF50+ 200 ml,11,none,497,36,0,34,12,0.352941176,0
+Zenova,Sun Milk Sensitive SPF30 50 ml,11,none,391,36,0,34,12,0.352941176,0
+Zenova,Sport Sun Spray SPF 50 Transparent Water Resistant 200 ml,11,Trimethylpentanediol/Adipic Acid/Glycerin Crosspolymer,381,104,1,34,12,0.352941176,1
+Zenova,Face Sun Cream SPF50 100 ml,11,Triacontanyl PVP,174,101,1,34,12,0.352941176,1
+Zendium,Kids 0-5 <U+00E5>r Tandkr<U+00E4>m,2,Steareth-30,239,97,1,32,3,0.09375,1
+Zendium,Tandpasta Classic Mini 15ml,2,Steareth-30,410,97,1,32,3,0.09375,1
+Zendium,Tandpasta Tandvlees Protect,2,Steareth-30,417,97,1,32,3,0.09375,1
+Zendium,Tandpasta Classic,2,Steareth-30,408,97,2,32,3,0.09375,1
+Zendium,Tandpasta Junior 5-12 jaar 75ml,2,Steareth-30,414,97,1,32,3,0.09375,1
+Zendium,Tandpasta Classic - 2 x 50 ml,2,Steareth-30,409,97,1,32,3,0.09375,1
+Zendium,Classic Mondwater 500ml,2,Steareth-30,108,97,1,32,3,0.09375,1
+Zendium,Biogum 75 ml,2,Steareth-30,83,97,1,32,3,0.09375,1
+Zendium,Extra Fresh Tandkr<U+00E4>m 75 ml,2,Steareth-30,170,97,1,32,3,0.09375,1
+Zendium,Protezione Completa Dentifricio,2,Steareth-30,297,97,1,32,3,0.09375,1
+Zendium,Mild Whitener,2,Steareth-30,262,97,1,32,3,0.09375,1
+Zendium,Tandkr<U+00E4>m Junior,2,Steareth-30,407,97,1,32,3,0.09375,1
+Zendium,Tandpasta junior,2,Steareth-30,412,97,1,32,3,0.09375,1
+Zendium,Tandpasta Tandvlees Protect,2,Steareth-30,417,97,1,32,3,0.09375,1
+Zendium,Classic tandpasta,2,Steareth-30,109,97,1,32,3,0.09375,1
+Zendium,Mouthwash Classic,2,Steareth-30,273,97,1,32,3,0.09375,1
+Zendium,Kids 0-5jr 50 ml,2,Steareth-30,240,97,1,32,3,0.09375,1
+Zendium,Tandpasta Classic,2,Steareth-3,408,96,2,32,3,0.09375,1
+Zendium,Tandpasta Classic,2,Steareth-30,408,97,2,32,3,0.09375,1
+Zendium,Classic toothpaste,2,Steareth-3,110,96,2,32,3,0.09375,1
+Zendium,Classic toothpaste,2,Steareth-30,110,97,2,32,3,0.09375,1
+Zendium,Tandapasta Frisk Mint,12,Steareth-3,406,96,2,2,1,0.5,1
+Zendium,Tandapasta Frisk Mint,12,Steareth-30,406,97,2,2,1,0.5,1
+Zendium,Zendium Tannkrem Fresh&White 75ml,2,none,490,36,0,32,3,0.09375,0
+Zendium,Zendium Fresh Whitener - 75 ml,2,Steareth-3,489,96,2,32,3,0.09375,1
+Zendium,Zendium Fresh Whitener - 75 ml,2,Steareth-30,489,97,2,32,3,0.09375,1
+Zendium,Zendium Classic Tandpasta,2,Steareth-30,488,97,1,32,3,0.09375,1
+Zendium,Extra Fresh Tandpasta 75ml,2,none,171,36,0,32,3,0.09375,0
+Zendium,Sensitive hammastahna 75ml,2,Steareth-3,338,96,2,32,3,0.09375,1
+Zendium,Sensitive hammastahna 75ml,2,Steareth-30,338,97,2,32,3,0.09375,1
+Zendium,Sensitive Whitener Tandpasta 75ml,2,Steareth-3,346,96,2,32,3,0.09375,1
+Zendium,Sensitive Whitener Tandpasta 75ml,2,Steareth-30,346,97,2,32,3,0.09375,1
+Zendium,Fresh + White Tandpasta,2,Steareth-3,208,96,2,32,3,0.09375,1
+Zendium,Fresh + White Tandpasta,2,Steareth-30,208,97,2,32,3,0.09375,1
+Zendium,Sensitive Whitener 75 ml,2,Steareth-3,345,96,2,32,3,0.09375,1
+Zendium,Sensitive Whitener 75 ml,2,Steareth-30,345,97,2,32,3,0.09375,1
+Zendium,Frisk Mint Toothpaste,2,Steareth-30,209,97,1,32,3,0.09375,1
+Zendium,Total Protect Toothpaste 15ml,2,Steareth-3,421,96,2,32,3,0.09375,1
+Zendium,Total Protect Toothpaste 15ml,2,Steareth-30,421,97,2,32,3,0.09375,1
+Zendium,Tandpasta extra fresh,2,Steareth-30,411,97,1,32,3,0.09375,1
+Zendium,Tandpasta Sensitive Whitener,2,Steareth-3,416,96,2,32,3,0.09375,1
+Zendium,Tandpasta Sensitive Whitener,2,Steareth-30,416,97,2,32,3,0.09375,1
+Zendium,Sensitive Toothpaste 75ml,2,Steareth-3,344,96,2,32,3,0.09375,1
+Zendium,Sensitive Toothpaste 75ml,2,Steareth-30,344,97,2,32,3,0.09375,1
+Zendium,Tandpasta junior 5-12 jaar,2,none,413,36,0,32,3,0.09375,0
+Zendium,Tandpasta sensitive,2,Steareth-3,415,96,2,32,3,0.09375,1
+Zendium,Tandpasta sensitive,2,Steareth-30,415,97,2,32,3,0.09375,1
+Zeeplokaal,Maca & grapefruit shampoo bar,7,none,251,36,0,48,21,0.4375,0
+Zeeplokaal,Aronia berry & rosemary shampoo bar,7,none,37,36,0,48,21,0.4375,0
+Zeeplokaal,Roses & palmarosa hand & body soap,8,none,307,36,0,11,4,0.363636364,0
+Zeeplokaal,Activated charcoal & tea tree hand & body soap,8,none,14,36,0,11,4,0.363636364,0
+Zeeplokaal,Poppy seedhand & body scrub soap,1,none,295,36,0,39,29,0.743589744,0
+Zeeplokaal,Green clay & bergamot hand & body soap,8,none,220,36,0,11,4,0.363636364,0
+Zeeplokaal,Green tea & lemongrass hand & body soap,8,none,221,36,0,11,4,0.363636364,0
+Zeeplokaal,Lemon & Eucalyptus household soap,12,none,249,36,0,2,1,0.5,0
+Zechsal,Hair & Body Wash Op Reis 50 ml,1,none,223,36,0,39,29,0.743589744,0
+Zechsal,Magnesium Bodygel 125 ml,1,none,252,36,0,39,29,0.743589744,0
+Zechsal,Magnesium Hair & Body Wash 200 ml,1,none,255,36,0,39,29,0.743589744,0
+Zechsal,Magnesium Oil Spray 100 ml,1,none,257,36,0,39,29,0.743589744,0
+Zechsal,Skin Balm 50 ml,1,none,365,36,0,39,29,0.743589744,0
+Zechsal,Shea Butter Body Cream Mini 30 ml,1,none,362,36,0,39,29,0.743589744,0
+Zechsal,MCM Chondroitin Magnesium Gel 100 ml,1,none,261,36,0,39,29,0.743589744,0
+Zechsal,Body Cream,1,none,91,36,0,39,29,0.743589744,0
+Zechsal,Magnesium Deodorant,3,none,254,36,0,11,8,0.727272727,0
+Zarqa,Sensitive Shampoo Iedere Dag,7,none,341,36,0,48,21,0.4375,0
+Zarqa,Pure Skin Cleansing Tonic,6,Polysorbate 20,298,81,1,50,21,0.42,1
+Zarqa,Clear Skin Reinigingsgel,6,none,114,36,0,50,21,0.42,0
+Zarqa,Oogcr<U+00A8><U+00A8>me met vitaminen en hyaluronzuur,6,none,288,36,0,50,21,0.42,0
+Zarqa,Natural Protection - 50 ml,3,none,277,36,0,11,8,0.727272727,0
+Zarqa,Anti-Age Gezichtscr<U+00A8><U+00A8>me,6,none,21,36,0,50,21,0.42,0
+Zarqa,Body Butter,1,Sodium Polyacrylate,87,92,1,39,29,0.743589744,1
+Zarqa,Handcr<U+00A8><U+00A8>me,8,Sodium Polyacrylate,229,92,1,11,4,0.363636364,1
+Zarqa,Douchegel Zonder Parfum,1,none,158,36,0,39,29,0.743589744,0
+Zarqa,Hand Protection Cream 75 ml,8,Sodium Polyacrylate,228,92,1,11,4,0.363636364,1
+Zarqa,Deodorant Roller Sensitive 50 ml,3,none,156,36,0,11,8,0.727272727,0
+Zarqa,Night Cream Nutritive 50 ml,6,none,284,36,0,50,21,0.42,0
+Zarqa,Sensitive Day Cream Nutritive 50 ml,6,none,335,36,0,50,21,0.42,0
+Zarqa,Night Cream Hydra 50 ml,6,none,283,36,0,50,21,0.42,0
+Zarqa,Sensitive Day Cream Hydra 50 ml,6,none,334,36,0,50,21,0.42,0
+Zarqa,Night Cream Anti-Age 50 ml,6,none,282,36,0,50,21,0.42,0
+Zarqa,Sensitive Body Lotion 200 ml,1,none,328,36,0,39,29,0.743589744,0
+Zarqa,Sensitive Conditioner 200 ml,7,Polyquaternium-37,332,76,1,48,21,0.4375,1
+Zarqa,Body Shower Gel Sensitive 200 ml,1,Acrylates Copolymer,95,2,1,39,29,0.743589744,1
+Zarqa,Cleansing Foam Sensitive 150 ml,6,none,111,36,0,50,21,0.42,0
+Zarqa,Sensitive Shampoo Anti-dandruff 200 ml,7,none,339,36,0,48,21,0.4375,0
+Zarqa,Sensitive Shampoo Every Day 200 ml,7,Acrylates Copolymer,340,2,1,48,21,0.4375,1
+Zarqa,Hand Cream Intensive 75 ml,8,Sodium Polyacrylate,226,92,1,11,4,0.363636364,1
+Zarqa,Enzyme Facial Peeling Ultra Soft 50 ml,6,none,164,36,0,50,21,0.42,0
+Zarqa,Body Butter Sensitive 250 ml,1,Sodium Polyacrylate,89,92,1,39,29,0.743589744,1
+Zarqa,Cleansing Tonic Clear Skin 200 ml,6,Polysorbate 20,112,81,1,50,21,0.42,1
+Zarqa,Cleansing Tonic Sensitive 200 ml,6,Polysorbate 20,113,81,1,50,21,0.42,1
+Zarqa,Hydra Face Cream 50 ml,6,PEG-100 Stearate,236,41,3,50,21,0.42,1
+Zarqa,Hydra Face Cream 50 ml,6,Polysorbate 60,236,82,3,50,21,0.42,1
+Zarqa,Hydra Face Cream 50 ml,6,Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,236,30,3,50,21,0.42,1
+Zarqa,Magnesium Day Cream Pro-Age 50 ml,6,none,253,36,0,50,21,0.42,0
+Zarqa,Shampoo Revitalizing Magnesium 200 ml,7,Acrylates Copolymer,361,2,1,48,21,0.4375,1
+Zarqa,Sensitive Face Milk 200 ml,6,Hydrogenated Polydecene,337,28,2,50,21,0.42,1
+Zarqa,Sensitive Face Milk 200 ml,6,PEG-100 Stearate,337,41,2,50,21,0.42,1
+Zarqa,Sensitive Cleansing Lotion 200 ml,6,Polysorbate 20,330,81,1,50,21,0.42,1
+Zarqa,Body Butter Pro-age Magnesium 200 ml,1,none,88,36,0,39,29,0.743589744,0
+Zarqa,Skin Oil Repair Complex 20 ml,7,none,366,36,0,48,21,0.4375,0
+Zarqa,Nutritive Face Cream 50 g,6,PEG-100 Stearate,285,41,3,50,21,0.42,1
+Zarqa,Nutritive Face Cream 50 g,6,Polysorbate 60,285,82,3,50,21,0.42,1
+Zarqa,Nutritive Face Cream 50 g,6,Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,285,30,3,50,21,0.42,1
+Zarqa,Sensitive Day & Night Cream Clear Skin 75 ml,6,none,333,36,0,50,21,0.42,0
+Zarqa,Calming Face Mask 50 ml,6,Hydroxyethyl Acrylate/Sodium Acryloyldimethyl Taurate Copolymer,103,30,2,50,21,0.42,1
+Zarqa,Calming Face Mask 50 ml,6,PEG-20 Glyceryl Stearate,103,48,2,50,21,0.42,1
+Zarqa,Sensitive Cleansing Milk 200 ml,6,none,331,36,0,50,21,0.42,0
+Zarqa,Anti-Redness Cream 50 ml,6,none,25,36,0,50,21,0.42,0
+Zarqa,Baby Ultra Soft 3in1 Wash 200 ml,7,PEG-200 Hydrogenated Glyceryl Palmate,54,50,3,48,21,0.4375,1
+Zarqa,Baby Ultra Soft 3in1 Wash 200 ml,7,PEG-7 Glyceryl Cocoate,54,58,3,48,21,0.4375,1
+Zarqa,Baby Ultra Soft 3in1 Wash 200 ml,7,Polyquaternium-10,54,74,3,48,21,0.4375,1
+Zarqa,Serum Hydraboost 50 ml,6,none,347,36,0,50,21,0.42,0
+Zarqa,Magnesium Night Cream Pro-Age 50 ml,6,none,256,36,0,50,21,0.42,0
+Zarqa,Shampoo Dandruff Control 200 ml,7,Laureth-4,354,32,3,48,21,0.4375,1
+Zarqa,Shampoo Dandruff Control 200 ml,7,PEG-200 Hydrogenated Glyceryl Palmate,354,50,3,48,21,0.4375,1
+Zarqa,Shampoo Dandruff Control 200 ml,7,PEG-7 Glyceryl Cocoate,354,58,3,48,21,0.4375,1
+Zarqa,Sensitive Body Treatment 200 ml,1,PEG-100 Stearate,329,41,2,39,29,0.743589744,1
+Zarqa,Sensitive Body Treatment 200 ml,1,Sodium Polyacrylate,329,92,2,39,29,0.743589744,1
+Zarqa,Soft Shower Scrub 150 ml,1,Acrylates/C10-30 Alkyl Acrylate Crosspolymer,376,5,1,39,29,0.743589744,1
+Zarqa,Shampoo Baby En Kind,0,PEG-7 Glyceryl Cocoate,353,58,1,146,21,0.143835616,1
+Zarqa,Ultra Soft Babyshampoo,0,PEG-200 Hydrogenated Glyceryl Palmate,426,50,3,146,21,0.143835616,1
+Zarqa,Ultra Soft Babyshampoo,0,PEG-7 Glyceryl Cocoate,426,58,3,146,21,0.143835616,1
+Zarqa,Ultra Soft Babyshampoo,0,Polyquaternium-10,426,74,3,146,21,0.143835616,1
+Zarqa,Baby Billen Spray,0,Dimethicone,40,23,1,146,21,0.143835616,1
+ZAO Make-up - essence of nature,Mascara Aloe V<U+00A8><U+00A6>ra 090 Schwarz,4,none,260,36,0,6,2,0.333333333,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 465 Rouge sombre *,9,none,308,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 466 Chocolat *,9,none,309,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 467 Nude hal<U+00A8><U+00A6> *,9,none,310,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 468 Prune *,9,none,311,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 469 Rose nude *,9,none,312,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 470 Violine satin<U+00A8><U+00A6> *,9,none,313,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 471 Brun naturel *,9,none,314,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 472 Rouge grenade *,9,none,315,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 473 Rose violine *,9,none,316,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 474 Framboise cerise *,9,none,317,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Rouge <U+00A8><U+00A4> l<U+00A8><U+00A8>vres Classic 475 Rose Capucine *,9,none,318,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Baume <U+00A8><U+00A4> l<U+00A8><U+00A8>vres stick 481 ***,9,none,77,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Gommage l<U+00A8><U+00A8>vres stick 482 ***,9,none,218,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Baume <U+00A8><U+00A4> l<U+00A8><U+00A8>vres fluide 483 ***,9,none,76,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Huile soin des l<U+00A8><U+00A8>vres 484 ***,9,none,235,36,0,17,16,0.941176471,0
+ZAO Make-up - essence of nature,Correcteur 491 Ivoire ***,5,none,121,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Correcteur 492 Beige clair ***,5,none,122,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Correcteur 493 Brun ros<U+00A8><U+00A6> ***,5,none,123,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Correcteur 494 Brun orang<U+00A8><U+00A6> ***,5,none,124,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Correcteur 499 vert anti-rougeurs ***,5,none,125,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 500 Matifiante *,5,none,263,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 501 Beige clair *,5,none,264,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 502 Beige ros<U+00A8><U+00A6> *,5,none,265,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 503 Beige orang<U+00A8><U+00A6> *,5,none,266,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 504 Beige neutre *,5,none,267,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 505 Beige noisette *,5,none,268,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 509 Beige Sable *,5,none,269,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mineral silk 510 Beige Dor<U+00A8><U+00A6> *,5,none,270,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 551 Noir***,5,none,128,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 552 Brun fonc<U+00A8><U+00A6> ***,5,none,129,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 553 Brun***,5,none,130,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 554 Brun clair***,5,none,131,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 555 Bleu***,5,none,132,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 556 Prune***,5,none,133,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 557 Gris***,5,none,134,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 558 Vert***,5,none,135,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 559 Colorado***,5,none,136,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 560 Sahara***,5,none,137,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 561 Ocre rouge***,5,none,138,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 562 Bois de rose***,5,none,139,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 563 Rose Vintage***,5,none,140,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Crayon 564 Beige nude***,5,none,141,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Soin ongles & cuticules : 634,10,none,377,36,0,36,4,0.111111111,0
+ZAO Make-up - essence of nature,Durcisseur 635,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,160,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Duo base & Top coat 636,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,159,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,French manucure 641 Blanc,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,205,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,French manucure 642 Beige,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,206,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,French manucure 643 Rose,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,207,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 644 Noir,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,428,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 650 Rouge carmin,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,429,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 651 Prune,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,430,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 653 Bleu nuit,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,431,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 654 Rose bonbon,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,432,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 655 Nude,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,433,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 656 Corail,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,434,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 657 Rose fuchsia,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,435,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 658 Champagne ros<U+00A8><U+00A6>,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,436,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 659 Cerise noire,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,437,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 660 Vert d'eau,10,none,438,36,0,36,4,0.111111111,0
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 661 Fuchsia,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,439,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 662 Rose poudr<U+00A8><U+00A6>,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,440,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 663 Framboise,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,441,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 664 P<U+00A8><U+00BA>che fizz,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,442,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Top coat paillette 665,10,Polyethylene Terephthalate,420,69,3,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Top coat paillette 665,10,Polyurethane-33,420,84,3,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Top coat paillette 665,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,420,9,3,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 666 Bleu canard,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,443,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 667 Rose amarante,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,444,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 668 Rouge passion,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,445,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 669 Orange boh<U+00A8><U+00A8>me,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,446,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 670 Bleu gris,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,447,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 671 Bois de rose,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,448,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 672 Rose ballerine,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,449,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 673 Hypnose,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,450,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 674 Pomme d<U+00A1><U+00AF>amour,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,451,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 675 Rose givr<U+00A8><U+00A6>,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,452,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 676 Biscay bay,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,453,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Vernis <U+00A8><U+00A4> ongles : 677 La vie en rose,10,Adipic acid/Neopentyl Glycol/Trimellitic Anhydride Copolymer,454,9,1,36,4,0.111111111,1
+ZAO Make-up - essence of nature,Eau Dissolvante 100 ml *** : 690,10,none,162,36,0,36,4,0.111111111,0
+ZAO Make-up - essence of nature,Eau Dissolvante 100 ml *** : 689,10,none,161,36,0,36,4,0.111111111,0
+ZAO Make-up - essence of nature,Huile D<U+00A8><U+00A6>maquillante 100 ml ***,5,none,234,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Eau Micellaire 120 ml ***,5,none,163,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Mousse Nettoyante 100 ml ***,5,none,272,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Lait D<U+00A8><U+00A6>maquillant Yeux 50 ml ***,4,none,245,36,0,6,2,0.333333333,0
+ZAO Make-up - essence of nature,Voile scintillant 50 ml ***,5,none,456,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Touche Lumi<U+00A8><U+00A8>re de Teint 721 Ros<U+00A8><U+00A6> *,5,none,422,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Touche Lumi<U+00A8><U+00A8>re de Teint 722 Sable *,5,none,423,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Touche Lumi<U+00A8><U+00A8>re de Teint 723 P<U+00A8><U+00BA>che *,5,none,424,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 728 Tr<U+00A8><U+00A8>s clair ocre *,5,none,177,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 729 Tr<U+00A8><U+00A8>s clair ivoire ros<U+00A8><U+00A6> *,5,none,178,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 730 Ivoire *,5,none,179,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 731 Abricot *,5,none,180,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 732 P<U+00A8><U+00A6>tale de rose *,5,none,181,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 733 Neutre *,5,none,182,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 734 Cappuccino *,5,none,183,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 735 Chocolat *,5,none,184,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 736 Topaze *,5,none,185,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 737 Bronze *,5,none,186,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 738 Noisette *,5,none,187,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 739 Caroube *,5,none,188,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 740 Acajou sombre *,5,none,189,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint compact 741 Moka *,5,none,190,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Base Prim'Hydra 751***,5,none,73,36,0,72,72,1,0
+ZAO Make-up - essence of nature,BB cream (Tube 30 ml) 760 Clair ***,5,none,78,36,0,72,72,1,0
+ZAO Make-up - essence of nature,BB cream (Tube 30 ml) 761 M<U+00A8><U+00A6>dium ***,5,none,79,36,0,72,72,1,0
+ZAO Make-up - essence of nature,BB cream (Tube 30 ml) 762 Hal<U+00A8><U+00A6> ***,5,none,80,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 771 Beige cr<U+00A8><U+00A8>me ***,5,none,191,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 772 Beige dor<U+00A8><U+00A6> ***,5,none,192,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 773 Beige sable ***,5,none,193,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 774 Beige miel ***,5,none,194,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 775 M<U+00A8><U+00A6>dium abricot ***,5,none,195,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 776 Medium Chocolat au lait ***,5,none,196,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 777 Medium praline ***,5,none,197,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 778 Hal<U+00A8><U+00A6> Cappuccino ***,5,none,198,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 779 Hal<U+00A8><U+00A6> camel ***,5,none,199,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 780 Hal<U+00A8><U+00A6> tiramisu ***,5,none,200,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 781 Hal<U+00A8><U+00A6> muscade ***,5,none,201,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 782 Brun Chocolat ***,5,none,202,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 783 Brun Caf<U+00A8><U+00A6> ***,5,none,203,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Fond de teint stick 784 Brun <U+00A8><U+00A6>b<U+00A8><U+00A8>ne ***,5,none,204,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 791 Beige porcelaine ***,5,none,28,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 792 Beige Sable ***,5,none,29,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 793 Medium abricot ***,5,none,30,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 794 Medium cappuccino ***,5,none,31,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 795 Hal<U+00A8><U+00A6> noisette ***,5,none,32,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 796 Hal<U+00A8><U+00A6> tiramisu ***,5,none,33,36,0,72,72,1,0
+ZAO Make-up - essence of nature,Anticerne fluide 796 Hal<U+00A8><U+00A6> tiramisu ***,5,none,33,36,0,72,72,1,0

@@ -1,6 +1,21 @@
 /* Stacked bar chart for MP presence */
 function stackedBar(g, data, width, height, margin, speed) {
+  // x scale
+  const x = d3.scaleBand()
+    .domain(data.map(d => d.product_type))
+    .range([margin.left, width - margin.right]);
 
+  // y scale
+  const y = d3.scaleLinear()
+    .domain(data.map(d => d.mp_count))
+    .range([height - margin.bottom, margin.top]);
+
+  // add bars
+  g.selectAll("rect")
+    .data(data, d => d.product_type)
+    .join(
+
+  )
 }
 
 
@@ -18,7 +33,7 @@ function bubbleChart(g, data, grouping, width, height, margin, speed) {
   //.sort((a, b) => a - b);
   const I = d3.map(data, d => d.p_id - 1);
 
-  const radius = width / 50;
+  const radius = width / 60;
 
   const product_types = ["Baby Care", "Body", "Dental Care", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Intimate Care", "Legs & Feet", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
 
@@ -45,17 +60,10 @@ function bubbleChart(g, data, grouping, width, height, margin, speed) {
     (d3.hierarchy({
       children: I
     })
-      .sum(i => V[i]))
-    .sort(function comparator(a, b) {
-      return a.value - b.value;
-    });
-
-
-  // id for each bubble
-  root.leaves()
-    .forEach((d, i) => {
-      d.id = i
-    });
+      .sum(i => V[i])
+      .sort(function comparator(a, b) {
+        return a.value - b.value;
+      }));
 
   // title (tooptip)
   const title = d3.map(data, d => "Product type: " + `${d.product_type}\n` + "MP present: " + `${d.mp_present}`);
@@ -143,7 +151,7 @@ async function manageViz() {
   const width = 600;
   const height = 600;
   const margin = { left: 1, right: 1, top: 1, bottom: 1 };
-  const speed = 1200;
+  const speed = 1500;
   let data = await d3.csv("data/scraping_loop3_num.csv");
   // sort by product id
   data = data.sort((a, b) => a.p_id - b.p_id);

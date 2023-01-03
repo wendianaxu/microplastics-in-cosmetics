@@ -22,40 +22,73 @@ function stackedBar(g, data, width, height, margin, speed) {
 
 
 /* Bubble Chart */
-function bubbleChart(g, data, grouping, width, height, margin, speed) {
+async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
+  const colorPalette = await d3.csv("data/colorPalette.csv");
+  const product_types = d3.map(colorPalette, d => d.product_type);
+  console.log(product_types);
+  const typeColors = d3.map(colorPalette, d => d.color);
+  const typeGroups = d3.map(colorPalette, d => d.id);
+
+  const top3Types = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
+
+  const mp_present = ["Microplastics Free", "Contains Microplastics"];
+  const mpColors = ["#007D00", "#B30000"];
+
+   // title (tooptip)
+  const title = d3.map(data, 
+    d => "Product type: " + `${product_types[d.product_type]}\n` 
+    + "MP present: " + `${d.mp_present}\n`
+    + "Product name: " + `${d.product}`);
+
+  // create an array that stores product name, brand, type, and # of MP present for each product
+  /* const pInfo = [
+    d3.map(data, d => d.product), 
+    d3.map(data, d => d.brand),
+    d3.map(data, d => product_types[d.product_type]), 
+    d3.map(data, d => d.n_ingre)
+  ]; */
+
+  // product info text to be shown when hovered
+  const pInfo = d3.map(data, 
+    d => "Product name: " + `${d.product}\n`
+    + "Brand: " + `${d.brand}\n`
+    + "Product type: " + `${product_types[d.product_type]}\n` 
+    + "MP present: " + `${d.mp_present}`);
+
+  // create svg for product info
+  const info_g = d3.select("#info");
 
   // Compute the values. 
   const D = d3.map(data, d => d);
-  const V = d3.map(data, d => eval(grouping))
+  const V = d3.map(data, d => eval(grouping));
   //.sort((a, b) => a - b);
-  const G = d3.map(data, d => eval(grouping))
+  const G = d3.map(data, d => eval(grouping));
   //.sort((a, b) => a - b);
-  const I = d3.map(data, d => d.p_id - 1);
+  const I = d3.map(data, d => data.indexOf(d));
 
-  const radius = width / 60;
-
-  const product_types = ["Baby Care", "Body", "Dental Care", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Intimate Care", "Legs & Feet", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
-
-  const mp_present = ["Microplastics Free", "Contains Microplastics"];
-
+  const radius = width / 95;
+  
   // Unique the groups.
-  let groups = I.map(i => G[i]);
-  groups = d3.range(new d3.InternSet(groups).size);
+  let groups = new d3.InternSet(I.map(i => +G[i]));
+  groups = Array.from(groups).sort(
+    (a, b) => a-b
+  );
+  
 
   // Construct scales.
   let color;
   if (grouping === "d.product_type") {
-    color = d3.scaleOrdinal(groups, d3.schemeTableau10);
+    color = d3.scaleOrdinal(typeGroups, typeColors);
   } else if (grouping === "d.mp_present") {
-    color = d3.scaleOrdinal(groups, ["#007D00", "#B30000"]);
+    color = d3.scaleOrdinal(groups, mpColors);
   }
 
 
   // Compute layout: create a 1-deep hierarchy, and pack it.
   const root = d3.pack()
     .size([width - margin.left - margin.right, height - margin.top - margin.bottom])
-    .padding(3)
+    .padding(4.5)
     .radius(() => radius)
     (d3.hierarchy({
       children: I
@@ -65,14 +98,14 @@ function bubbleChart(g, data, grouping, width, height, margin, speed) {
         return a.value - b.value;
       }));
 
-  // title (tooptip)
-  const title = d3.map(data, d => "Product type: " + `${d.product_type}\n` + "MP present: " + `${d.mp_present}`);
+
 
   // create graph
-  g.selectAll("circle")
+  g.selectAll(".circle")
     .data(root.leaves(), d => d.data)
     .join(
       enter => enter.append("circle")
+        .attr("class", "circle")
         .attr("transform", d => `translate(${d.x},${d.y})`)
         .attr("r", 0)
         .attr("fill", d => color(G[d.data]))
@@ -91,24 +124,66 @@ function bubbleChart(g, data, grouping, width, height, margin, speed) {
         .attr("r", 0)
         .remove()
     )
+    .attr("class", "circle")
+    // hover behavior
+    .on("mouseover", (evt, d) => showInfo(info_g, evt, d, pInfo))
+    .on("mouseout", (evt, d) => {
+      d3.selectAll(".infoText").attr("opacity", 0);
+      d3.select(evt.target)
+        .attr("opacity", 1);
+    })
+    // tooltip
     .append("title")
     .text(d => title[d.data]);
+  
+  // create legend
+  const legend = d3.select("#legend1");
+  makeLegend(legend, product_types, color, 15, 25, radius);
 
 
+}
 
-  /* .on("mouseover", mouseover)
-  .on("mousemove", mousemove)
-  .on("mouseleave", mouseleave); */
+// show product info
+function showInfo(g, evt, d, a){
+  // change bubble color
+  d3.select(evt.target)
+    .attr("opacity", 0.5);
 
-  // legend
-  /*d3.select("#legend")
-          .append(
-        Swatches(d3.scaleOrdinal(product_types, d3.schemeTableau10), {
-    columns: "180px"
-  }));*/
+  // make previous info invisible
+  g.selectAll(".infoText")
+    .attr("opacity", 0);
 
+  g.append("text")
+      .attr("class", "infoText")
+      .attr("id", "n" + `${d.data}`)
+      .attr("x", 0)
+      .attr("y", 30)
+      .text(a[d.data])
+      .style("fill", "white")
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle");
 
+};
 
+// legend
+function makeLegend(g, groups, color, x, y, r){
+  g.selectAll("legendCircle")
+    .data(groups)
+    .join("circle")
+      .attr("cx", (d, i) => (i <= 7) ? x : (x + 170))
+      .attr("cy", (d, i) => (i <= 7) ? (y + i * 35) : (y + (i-8) * 35))
+      .attr("r", r)
+      .style("fill", d => color(groups.indexOf(d)));
+  
+  g.selectAll("legendText")
+    .data(groups)
+    .join("text")
+      .attr("x", (d, i) => (i <= 7) ? (x + 20) : (x + 20 + 170))
+      .attr("y", (d, i) => (i <= 7) ? (y + i * 35) : (y + (i-8) * 35))
+      .text(d => d)
+      .style("fill", "white")
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle");
 }
 
 // tooltips https://d3-graph-gallery.com/graph/interactivity_tooltip.html
@@ -148,11 +223,11 @@ d3.select(this)
 
 // manage visualizations
 async function manageViz() {
-  const width = 600;
-  const height = 600;
+  const width = 700;
+  const height = 700;
   const margin = { left: 1, right: 1, top: 1, bottom: 1 };
   const speed = 1500;
-  let data = await d3.csv("data/scraping_loop3_num.csv");
+  let data = await d3.csv("data/top3Brands.csv");
   // sort by product id
   data = data.sort((a, b) => a.p_id - b.p_id);
 
@@ -160,6 +235,8 @@ async function manageViz() {
   const uniqueData = data.filter((value, index, a) => {
     return a.findIndex(v => v.p_id === value.p_id) === index;
   });
+
+  console.log(uniqueData.length);
 
   // unique product type
   const typeData = data.filter(
@@ -184,11 +261,13 @@ async function manageViz() {
     switch (section) {
       case 0:
         bubbleChart(g, uniqueData, "d.product_type", width, height, margin, speed);
-        console.log(uniqueData);
+        d3.select("#legend1")
+          .attr("opacity", 1);
         break;
       case 1:
         bubbleChart(g, uniqueData, "d.mp_present", width, height, margin, speed);
-        console.log(filteredData);
+        d3.select("#legend1")
+          .attr("opacity", 0);
         break;
     }
   });

@@ -13,6 +13,11 @@ h1 {
    font-size: 42pt;
 }
 
+h3 {
+  margin-block-start: 2em;
+  margin-block-end: 0;
+}
+
 body{
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -33,7 +38,7 @@ body{
 
 #content {
   display:grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
 }
 
 

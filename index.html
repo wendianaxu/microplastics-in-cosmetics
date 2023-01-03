@@ -2,7 +2,7 @@
 <html>
   <head>
       <meta charset="UTF-8">
-      <title>Bespoke Visualization</title>
+      <title>Microplastics in Cosmetics</title>
       <script src="https://d3js.org/d3.v7.min.js"></script>
       <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/time-and-space" type="text/css"/> 
       <link rel="stylesheet" href="style/main.css" /> 
@@ -21,14 +21,25 @@
         <div id="sections">
 
         <section>
-          <h2>Exit Music (For a Band)</h2>
+          <h2>Microplastics in Cosmetics</h2>
           <div class="card">
-          <p>Each bubble is a product that contains microplastics.</p>
+            <p>Each bubble here represents a product from the 3 most 
+              valuable <strong>cosmetic</strong> brands in the world in 2022. </p>
+            <p>They span 12 <em>product types</em> -- from body lotion, to shampoo, to mascara, and so on. </p>
         </div>
+          <div>
+            <h3>Product Type</h3>
+            <svg id="legend1" height = 600 width = 400></svg>
+          </div>
           </section>
           <section>
             <div class="card">
-            <p>The gloom index is made up of several pieces. One of those is the <em>valence</em> of their songs. The valence is a measure of a song's affect. The higher the valence, the "happier" the sound. We can see that the bulk of their songs are below 50%.</p>
+            <p>Out of the 1120 products on this graph, <span style='color:#B30000'>990</span> products contain at least one ingredient classified
+             as <strong>microplastics</strong>. That is <span style='color: #B30000'>88.4%</span>. </p>
+          </div>
+          <div>
+            <h3>Hover on a bubble to inspect details of that product: </h3>
+            <svg id = "info" height = 600 width = 400 opacity = 1></svg>
           </div>
           </section>
 

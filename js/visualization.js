@@ -24,7 +24,7 @@ function stackedBar(g, data, width, height, margin, speed) {
 /* Bubble Chart */
 async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
-  const colorPalette = await d3.csv("data/colorPalette.csv");
+  const colorPalette = await d3.csv("data/colorPalette12.csv");
   const product_types = d3.map(colorPalette, d => d.product_type);
   console.log(product_types);
   const typeColors = d3.map(colorPalette, d => d.color);
@@ -52,10 +52,10 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
   // product info text to be shown when hovered
   const pInfo = d3.map(data, 
-    d => "Product name: " + `${d.product}\n`
-    + "Brand: " + `${d.brand}\n`
-    + "Product type: " + `${product_types[d.product_type]}\n` 
-    + "Number of microplastic ingredients: " + `${d.n_ingre}`);
+    d => "<strong>Product name: </strong>" + `${d.product}\n`
+    + "<strong>Brand: </strong>" + `${d.brand}\n`
+    + "<strong>Product type: </strong>" + `${product_types[d.product_type]}\n` 
+    + "<strong>Number of microplastic ingredients: </strong>" + `${d.n_ingre}`);
 
   // create svg for product info
   const info_g = d3.select("#info");
@@ -132,7 +132,6 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     // hover behavior
     .on("mouseover", (evt, d) => showInfo(info_g, evt, d, pInfo))
     .on("mouseout", (evt, d) => {
-      d3.selectAll("tspan.text").attr("opacity", 0);
       d3.select(evt.target)
         .attr("opacity", 1);
     })
@@ -168,22 +167,17 @@ function showInfo(g, evt, d, a){
   d3.select(evt.target)
     .attr("opacity", 0.5);
 
-  // make previous info invisible
-  //g.selectAll("#infoText")
-    //.attr("opacity", 0);
+  // remove previous info
+  d3.selectAll(".text").remove();
 
   // append one tspan for each line of info
-  g.selectAll("#infoText")
-    .selectAll("tspan.text")
+  g.selectAll("#info")
     .data(a[d.data].split("\n"))
     .enter()
-    .append("tspan")
+    .append()
+    .html(d => "<p>" + d + "</p>")
     .attr("class", "text")
-    .text(d => d)
-    .attr("x", 0)
-    .attr("dx", 0)
-    .attr("dy", 40)
-    .attr("opacity", 1);
+    .attr("x", 0);
 
 };
 

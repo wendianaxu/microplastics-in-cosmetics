@@ -144,7 +144,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   switch (grouping) {
     case "d.product_type":
       legend = d3.select("#legend1");
-      rows = 8;
+      rows = 6;
       groupNames = product_types;
       dx = 170;
       break;

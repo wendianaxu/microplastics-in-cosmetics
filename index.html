@@ -27,7 +27,7 @@
               valuable <strong>cosmetic</strong> brands in the world in 2022. </p>
             <p>They span 12 <em>product types</em> -- from body lotion, to shampoo, to mascara, and so on. </p>
         </div>
-          <div>
+          <div class = "legend">
             <h3>Product Type</h3>
             <svg id="legend1" height = 600 width = 400></svg>
           </div>
@@ -37,9 +37,18 @@
             <p>Out of the 1120 products on this graph, <span style='color:#B30000'>990</span> products contain at least one ingredient classified
              as <strong>microplastics</strong>. That is <span style='color: #B30000'>88.4%</span>. </p>
           </div>
-          <div>
+          <div class = "legend">
+            <svg id="legend2" height = 50 width = 400></svg>
             <h3>Hover on a bubble to inspect details of that product: </h3>
-            <svg id = "info" height = 600 width = 400 opacity = 1></svg>
+            <svg id = "info" height = 600 width = 600>
+              <text id = "infoText" x = 0 y = 30 fill = "white" text-anchor = "left" alignment-baseline = "middle">
+                <tspan class = "infoTitle" x = 0 dx = 0 dy = 40>Product name: </tspan>
+                <tspan class = "infoTitle" x = 0 dx = 0 dy = 40>Brand: </tspan>
+                <tspan class = "infoTitle" x = 0 dx = 0 dy = 40>Product type: </tspan>
+                <tspan class = "infoTitle" x = 0 dx = 0 dy = 40>Number of microplastic ingredients: </tspan>
+              </text>
+              
+            </svg>
           </div>
           </section>
 

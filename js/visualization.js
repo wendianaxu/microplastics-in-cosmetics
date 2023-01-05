@@ -37,9 +37,10 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
    // title (tooptip)
   const title = d3.map(data, 
-    d => "Product type: " + `${product_types[d.product_type]}\n` 
-    + "MP present: " + `${d.mp_present}\n`
-    + "Product name: " + `${d.product}`);
+    d => "Product name: " + `${d.product}\n`
+    + "Brand: " + `${d.brand}\n`
+    + "Product type: " + `${product_types[d.product_type]}\n` 
+    + "Number of microplastic ingredients: " + `${d.n_ingre}`);
 
   // create an array that stores product name, brand, type, and # of MP present for each product
   /* const pInfo = [
@@ -54,7 +55,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     d => "Product name: " + `${d.product}\n`
     + "Brand: " + `${d.brand}\n`
     + "Product type: " + `${product_types[d.product_type]}\n` 
-    + "MP present: " + `${d.mp_present}`);
+    + "Number of microplastic ingredients: " + `${d.n_ingre}`);
 
   // create svg for product info
   const info_g = d3.select("#info");
@@ -78,10 +79,13 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
   // Construct scales.
   let color;
-  if (grouping === "d.product_type") {
-    color = d3.scaleOrdinal(typeGroups, typeColors);
-  } else if (grouping === "d.mp_present") {
-    color = d3.scaleOrdinal(groups, mpColors);
+  switch (grouping) {
+    case "d.product_type":
+      color = d3.scaleOrdinal(typeGroups, typeColors);
+      break;
+    case "d.mp_present":
+      color = d3.scaleOrdinal(groups, mpColors);
+      break;
   }
 
 
@@ -128,7 +132,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     // hover behavior
     .on("mouseover", (evt, d) => showInfo(info_g, evt, d, pInfo))
     .on("mouseout", (evt, d) => {
-      d3.selectAll(".infoText").attr("opacity", 0);
+      d3.selectAll("tspan.text").attr("opacity", 0);
       d3.select(evt.target)
         .attr("opacity", 1);
     })
@@ -137,8 +141,23 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     .text(d => title[d.data]);
   
   // create legend
-  const legend = d3.select("#legend1");
-  makeLegend(legend, product_types, color, 15, 25, radius);
+  let legend, rows, groupNames, dx;
+  switch (grouping) {
+    case "d.product_type":
+      legend = d3.select("#legend1");
+      rows = 8;
+      groupNames = product_types;
+      dx = 170;
+      break;
+    case "d.mp_present":
+      legend = d3.select("#legend2");
+      rows = 1; 
+      groupNames = mp_present;
+      dx = 200;
+      break;
+  }
+  
+  makeLegend(legend, groupNames, color, 15, 25, radius, rows, dx);
 
 
 }
@@ -150,36 +169,39 @@ function showInfo(g, evt, d, a){
     .attr("opacity", 0.5);
 
   // make previous info invisible
-  g.selectAll(".infoText")
-    .attr("opacity", 0);
+  //g.selectAll("#infoText")
+    //.attr("opacity", 0);
 
-  g.append("text")
-      .attr("class", "infoText")
-      .attr("id", "n" + `${d.data}`)
-      .attr("x", 0)
-      .attr("y", 30)
-      .text(a[d.data])
-      .style("fill", "white")
-      .attr("text-anchor", "left")
-      .style("alignment-baseline", "middle");
+  // append one tspan for each line of info
+  g.selectAll("#infoText")
+    .selectAll("tspan.text")
+    .data(a[d.data].split("\n"))
+    .enter()
+    .append("tspan")
+    .attr("class", "text")
+    .text(d => d)
+    .attr("x", 0)
+    .attr("dx", 0)
+    .attr("dy", 40)
+    .attr("opacity", 1);
 
 };
 
 // legend
-function makeLegend(g, groups, color, x, y, r){
+function makeLegend(g, groups, color, x, y, r, rows, dx){
   g.selectAll("legendCircle")
     .data(groups)
     .join("circle")
-      .attr("cx", (d, i) => (i <= 7) ? x : (x + 170))
-      .attr("cy", (d, i) => (i <= 7) ? (y + i * 35) : (y + (i-8) * 35))
+      .attr("cx", (d, i) => (i <= rows-1) ? x : (x + dx))
+      .attr("cy", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .attr("r", r)
       .style("fill", d => color(groups.indexOf(d)));
   
   g.selectAll("legendText")
     .data(groups)
     .join("text")
-      .attr("x", (d, i) => (i <= 7) ? (x + 20) : (x + 20 + 170))
-      .attr("y", (d, i) => (i <= 7) ? (y + i * 35) : (y + (i-8) * 35))
+      .attr("x", (d, i) => (i <= rows-1) ? (x + 20) : (x + 20 + dx))
+      .attr("y", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .text(d => d)
       .style("fill", "white")
       .attr("text-anchor", "left")

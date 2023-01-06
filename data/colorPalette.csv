@@ -1,17 +1,17 @@
-﻿product_type,id,color,order_by_hue,
-Baby Care,0,#5c97c4,10,
-Body,1,#51b1b9,9,
-Dental Care,2,#68c03d,6,
-Deodorant,3,#7673ce,11,
-Eye Makeup,4,#6e3982,13,
-Face Makeup,5,#c88654,3,
-Facial Care,6,#65a982,8,
-Hair,7,#823936,1,
-Hands,8,#596f25,5,
-Intimate Care,9,#c887b4,15,
-Legs & Feet,10,#d34c33,2,
-Lips,11,#d64878,0,
-Nails,12,#b93aaf,14,
-Perfume,13,#6b3cc1,12,
-Sun Care,14,#fdeb7e,4,
-Other,15,#5d9e4c,7,
+﻿product_type,id,color,order_by_hue
+Baby Care,0,#5c97c4,10
+Body,1,#51b1b9,9
+Dental Care,2,#68c03d,6
+Deodorant,3,#7673ce,11
+Eye Makeup,4,#6e3982,13
+Face Makeup,5,#c88654,3
+Facial Care,6,#65a982,8
+Hair,7,#823936,1
+Hands,8,#596f25,5
+Intimate Care,9,#c887b4,15
+Legs & Feet,10,#d34c33,2
+Lips,11,#d64878,0
+Nails,12,#b93aaf,14
+Perfume,13,#6b3cc1,12
+Sun Care,14,#fdeb7e,4
+Other,15,#5d9e4c,7

@@ -24,11 +24,12 @@ function stackedBar(g, data, width, height, margin, speed) {
 /* Bubble Chart */
 async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
-  const colorPalette = await d3.csv("data/colorPalette12.csv");
+  const colorPalette = await d3.csv("data/colorPalette.csv");
+  const colorPalette12 = await d3.csv("data/colorPalette12.csv");
   const product_types = d3.map(colorPalette, d => d.product_type);
   console.log(product_types);
-  const typeColors = d3.map(colorPalette, d => d.color);
-  const typeGroups = d3.map(colorPalette, d => d.id);
+  const typeColors = d3.map(colorPalette12, d => d.color);
+  const typeGroups = d3.map(colorPalette12, d => d.id);
 
   const top3Types = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
 
@@ -145,7 +146,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     case "d.product_type":
       legend = d3.select("#legend1");
       rows = 6;
-      groupNames = product_types;
+      groupNames = top3Types;
       dx = 170;
       break;
     case "d.mp_present":
@@ -197,7 +198,7 @@ function makeLegend(g, groups, color, x, y, r, rows, dx){
       .attr("x", (d, i) => (i <= rows-1) ? (x + 20) : (x + 20 + dx))
       .attr("y", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .text(d => d)
-      .style("fill", "white")
+      .style("fill", "#e3e3e3")
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle");
 }

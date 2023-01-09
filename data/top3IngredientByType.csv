@@ -1,0 +1,84 @@
+ingredients,product_type,n_product_with_ingre,percent_with_ingre,n_product,id,rank_in_type
+Dimethicone,Deodorant,363,0.228589421,1588,0,1
+Dimethicone,Body,1063,0.197107361,5393,1,1
+Dimethicone,Sun Care,390,0.185185185,2106,2,1
+Dimethicone,Hair,1266,0.209602649,6040,3,1
+Dimethicone,Hands,272,0.196531792,1384,4,1
+Dimethicone,Facial Care,1170,0.203442879,5751,5,1
+Dimethicone,Lips,137,0.19740634,694,6,1
+Dimethicone,Eye Makeup,138,0.219047619,630,7,1
+Dimethicone,Face Makeup,223,0.187394958,1190,8,1
+Dimethicone,Other,47,0.141993958,331,9,1
+Dimethicone,Nails,11,0.119565217,92,10,1
+Dimethicone,Perfume,25,0.159235669,157,11,1
+Carbomer,Body,585,0.108473948,5393,12,2
+Carbomer,Sun Care,245,0.116334283,2106,13,2
+Carbomer,Eye Makeup,62,0.098412698,630,14,2
+Carbomer,Deodorant,228,0.143576826,1588,15,2
+Carbomer,Facial Care,697,0.121196314,5751,16,2
+Carbomer,Face Makeup,98,0.082352941,1190,17,2
+Carbomer,Hair,740,0.122516556,6040,18,2
+Carbomer,Hands,160,0.115606936,1384,19,2
+Carbomer,Lips,73,0.10518732,694,20,2
+Carbomer,Other,19,0.057401813,331,21,7
+Carbomer,Nails,8,0.086956522,92,22,2
+Carbomer,Perfume,19,0.121019108,157,23,2
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Sun Care,175,0.083095916,2106,24,3
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Body,393,0.072872242,5393,25,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Face Makeup,65,0.054621849,1190,26,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Eye Makeup,38,0.06031746,630,27,3
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Hands,90,0.065028902,1384,28,5
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Facial Care,410,0.071291949,5751,29,3
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Deodorant,132,0.083123426,1588,30,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Lips,42,0.060518732,694,31,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Hair,387,0.064072848,6040,32,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Other,26,0.078549849,331,33,4
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Perfume,6,0.038216561,157,34,5
+Acrylates/C10-30 Alkyl Acrylate Crosspolymer,Nails,4,0.043478261,92,35,4
+PEG-40 Hydrogenated Castor Oil,Body,415,0.076951604,5393,36,3
+PEG-40 Hydrogenated Castor Oil,Sun Care,139,0.066001899,2106,37,4
+PEG-40 Hydrogenated Castor Oil,Eye Makeup,35,0.055555556,630,38,4
+PEG-40 Hydrogenated Castor Oil,Lips,36,0.051873199,694,39,6
+PEG-40 Hydrogenated Castor Oil,Facial Care,384,0.066770996,5751,40,4
+PEG-40 Hydrogenated Castor Oil,Deodorant,146,0.091939547,1588,41,3
+PEG-40 Hydrogenated Castor Oil,Hands,92,0.066473988,1384,42,4
+PEG-40 Hydrogenated Castor Oil,Hair,501,0.08294702,6040,43,3
+PEG-40 Hydrogenated Castor Oil,Face Makeup,52,0.043697479,1190,44,6
+PEG-40 Hydrogenated Castor Oil,Other,37,0.111782477,331,45,2
+PEG-40 Hydrogenated Castor Oil,Nails,5,0.054347826,92,46,3
+PEG-40 Hydrogenated Castor Oil,Perfume,1,0.006369427,157,47,6
+Cyclopentasiloxane,Deodorant,73,0.045969773,1588,48,5
+Cyclopentasiloxane,Body,357,0.066196922,5393,49,5
+Cyclopentasiloxane,Hands,109,0.078757225,1384,50,3
+Cyclopentasiloxane,Lips,69,0.099423631,694,51,3
+Cyclopentasiloxane,Face Makeup,79,0.066386555,1190,52,3
+Cyclopentasiloxane,Eye Makeup,35,0.055555556,630,53,5
+Cyclopentasiloxane,Facial Care,284,0.049382716,5751,54,5
+Cyclopentasiloxane,Sun Care,84,0.03988604,2106,55,5
+Cyclopentasiloxane,Hair,283,0.046854305,6040,56,6
+Cyclopentasiloxane,Other,21,0.063444109,331,57,6
+Cyclopentasiloxane,Perfume,7,0.044585987,157,58,3
+Cyclopentasiloxane,Nails,2,0.02173913,92,59,6
+Polysorbate 20,Sun Care,71,0.0337132,2106,60,6
+Polysorbate 20,Body,184,0.034118302,5393,61,7
+Polysorbate 20,Face Makeup,60,0.050420168,1190,62,5
+Polysorbate 20,Deodorant,56,0.035264484,1588,63,7
+Polysorbate 20,Facial Care,203,0.035298209,5751,64,6
+Polysorbate 20,Hair,215,0.035596026,6040,65,7
+Polysorbate 20,Eye Makeup,25,0.03968254,630,66,6
+Polysorbate 20,Other,26,0.078549849,331,67,5
+Polysorbate 20,Hands,46,0.033236994,1384,68,7
+Polysorbate 20,Lips,39,0.056195965,694,69,5
+Polysorbate 20,Nails,4,0.043478261,92,70,5
+Polysorbate 20,Perfume,7,0.044585987,157,71,4
+PEG-7 Glyceryl Cocoate,Body,236,0.04376043,5393,72,6
+PEG-7 Glyceryl Cocoate,Face Makeup,25,0.021008403,1190,73,7
+PEG-7 Glyceryl Cocoate,Sun Care,68,0.032288699,2106,74,7
+PEG-7 Glyceryl Cocoate,Facial Care,183,0.031820553,5751,75,7
+PEG-7 Glyceryl Cocoate,Deodorant,72,0.04534005,1588,76,6
+PEG-7 Glyceryl Cocoate,Hands,53,0.038294798,1384,77,6
+PEG-7 Glyceryl Cocoate,Hair,331,0.054801325,6040,78,5
+PEG-7 Glyceryl Cocoate,Lips,18,0.025936599,694,79,7
+PEG-7 Glyceryl Cocoate,Eye Makeup,13,0.020634921,630,80,7
+PEG-7 Glyceryl Cocoate,Other,32,0.096676737,331,81,3
+PEG-7 Glyceryl Cocoate,Nails,2,0.02173913,92,82,7

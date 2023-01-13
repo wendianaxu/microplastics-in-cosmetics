@@ -1,4 +1,5 @@
 
+
 /* Bubble Chart */
 async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
@@ -149,7 +150,7 @@ function showInfo(g, evt, d, a){
   // remove previous info
   d3.selectAll(".text").remove();
 
-  // append one tspan for each line of info
+  // append info
   g.selectAll("#info")
     .data(a[d.data].split("\n"))
     .enter()
@@ -190,15 +191,24 @@ function topIngreChart(g, data, width, height, margin, speed){
     + "<strong>Percentage of products with this microplastic: </strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%\n`
     + "<strong>Rank: </strong>" + `${d.rank_in_type}`);
 
+  // ingredient info
+  const iInfo = ["<strong>Dimethicone</strong> is a silicon-based polymer. It gives a smooth texture to products such as hair conditioners, shampoos, and moisturizers. It is suspected to be bioaccumulative and toxic to aquatic organisms. ", 
+  "<strong>Carbomer</strong> is a polymer made from acrylic acid. It is often used as a thickening agent or to prevent oil and water from separating. It is suspected to be hazardous to the aquatic environment. ", 
+  "<strong>Acrylates/C10-30 Alkyl Acrylate Crosspolymer</strong> is added to cosmetic products to enhance texture. It thickens and stabilizes cosmetic formulations. It is poorly biodegradable. ", 
+"<strong>PEG-40 Hydrogenated Castor Oil</strong> is a synthetic polymer that provides a soft feel to products and helps other ingredients solubilize. There is not enough scientific research available on its toxicity to the environment. ", 
+"<strong>Cyclopentasiloxane</strong> is a silicon-based polymer. It helps products dry quickly and provides a silky feeling. It is bioaccumulative and expected to be toxic to the environment. ", 
+"<strong>Polysorbate 20</strong> is used in cosmetic products to prevent oil and water from separating. There is not enough scientific research available on its toxicity to the environment. ", 
+"<strong>PEG-7 Glyceryl Cocoate</strong> is a polymer that binds oil and water together and thickens cosmetic formulations. There is not enough scientific research available on its toxicity to the environment. "];
+
   // x scale
   const x = d3.scalePoint()
     .domain(data.map(d => d.ingredients))
-    .range([margin.left, width - margin.right]);
+    .range([margin.left + 40, width - margin.right]);
 
   // y scale
   const y = d3.scalePoint()
     .domain(data.map(d => d.product_type))
-    .range([height - margin.bottom, margin.top]);
+    .range([height - margin.bottom, margin.top + 60]);
   
   // scale for circle size
   const rScale = d3.scaleSqrt()
@@ -208,6 +218,42 @@ function topIngreChart(g, data, width, height, margin, speed){
   // color scale for rank of ingredient frequency within product types
   const colors = ['#034e7b','#0570b0','#3690c0','#74a9cf','#a6bddb','#d0d1e6','#f1eef6'];
   const colorScale = d3.scaleOrdinal(d3.range(1, 7), colors);
+
+  // axes
+  const xAxis = g.append("g")
+    .attr("class", "xAxis")
+    .attr("transform", `translate(0, ${margin.top + 30})`)
+    .call(d3.axisTop(x))
+    .attr("opacity", 0)
+    .transition()
+      .duration(speed)
+      .attr("opacity", 1);
+  
+  xAxis.select("path.domain")
+  .attr("opacity", 0);
+
+  
+
+  const yAxis = g.append("g")
+    .attr("class", "yAxis")
+    .attr("transform", `translate(${margin.left}, 0)`)
+    .call(d3.axisLeft(y))
+    .attr("opacity", 0)
+    .transition()
+      .duration(speed)
+      .attr("opacity", 1);
+  
+  yAxis.select("path.domain")
+  .attr("opacity", 0);
+
+  // wrap axis text
+  setTimeout(() => {
+    xAxis.selectAll(".tick text")
+      .call(wrap, 40, 5);
+  });
+
+  
+
 
   // append circles
   g.selectAll("circle")
@@ -234,8 +280,71 @@ function topIngreChart(g, data, width, height, margin, speed){
       .remove()
 
     )
+    .on("mouseover", evt => {
+      d3.select(evt.target)
+        .attr("opacity", 0.5);
+      })
+    .on("click", (evt, d) => showIngreInfo(d3.select("#ingre-info"), evt, d, iInfo))
+    .on("mouseout", evt => {
+      d3.select(evt.target)
+        .attr("opacity", 1);
+    })
     .append("title")
     .text(d => dInfo[d.id]);
+
+    
+  
+}
+
+// wrap axis text
+function wrap(text, wrapWidth, yAxisAdjustment = 0) {
+  text.each(function() {
+    var text = d3.select(this),
+        words = text.text().split(/\s+/).reverse(),
+        word,
+        line = [],
+        lineNumber = 0,
+        lineHeight = 1.1, // ems
+        y = text.attr("y"),
+        dy = parseFloat(text.attr("dy")) - yAxisAdjustment,
+        tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", `${dy}em`);
+    while (word = words.pop()) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > wrapWidth) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+      }
+    }
+  });
+  return 0;
+}
+
+// show ingredient info
+function showIngreInfo(g, evt, d, a) {
+
+  // remove previous info
+  g.selectAll("p").remove();
+
+  // visible
+  g.transition()
+    .duration(300)
+    .style("opacity", 1);
+
+  // append info
+  g.html("<p>" + a[d.i_id] + "</p>")
+    .attr("x", 0)
+    .select("p")
+    .attr("opacity", 0)
+    .transition()
+    .duration(1200)
+    .attr("opacity", 1);
+  
+  g.html("<p>" + a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%` 
+  + "</strong> of all <em>" + d.product_type + "</em> products.</p>"
+  );
 }
 
 // tooltips https://d3-graph-gallery.com/graph/interactivity_tooltip.html
@@ -278,7 +387,7 @@ async function manageViz() {
   const width = 700;
   const height = 700;
   const marginSmall = { left: 1, right: 1, top: 1, bottom: 1 };
-  const marginLarge = { left: 80, right: 50, top: 80, bottom: 50 };
+  const marginLarge = { left: 100, right: 50, top: 50, bottom: 50 };
   const speed = 1500;
 
   // bubble chart data
@@ -325,12 +434,20 @@ async function manageViz() {
         break;
       case 1:
         bubbleChart(g, uniqueData, "d.mp_present", width, height, marginSmall, speed);
+
         d3.select("#legend1")
           .attr("opacity", 0);
+
         d3.selectAll(".ingreChart")
           .transition()
           .duration(speed)
           .attr("r", 0)
+          .remove();
+
+        d3.selectAll(".xAxis,.yAxis")
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
           .remove();
 
         break;

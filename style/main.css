@@ -20,7 +20,7 @@ h2{
 h3 {
   font-size: 1.2em;
   margin-block-start: 1em;
-  margin-block-end: 0;
+  margin-block-end: 1em;
 }
 
 body{
@@ -94,7 +94,21 @@ div.legend{
   padding-top: 40px;
 }
 
-tspan.infoTitle{
-  font-size: 22px;
-  font-weight: "bold";
+.yAxis .tick text{
+  font-size: 14px;
+  font-family: 'IBM Plex Serif', serif;
 }
+
+.xAxis .tick text{
+  font-size: 10px;
+  font-family: 'IBM Plex Serif', serif;
+}
+
+circle.ingreChart{
+  cursor: pointer;
+}
+
+#ingre-info{
+  opacity: 0;
+}
+

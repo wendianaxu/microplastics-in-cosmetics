@@ -7,7 +7,18 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   const colorPalette12 = await d3.csv("data/colorPalette12.csv");
   const product_types = d3.map(colorPalette, d => d.product_type);
   console.log(product_types);
-  const typeColors = d3.map(colorPalette12, d => d.color);
+  const typeColors = ["#788a3c",
+  "#589071",
+  "#7acbd5",
+  "#738090",
+  "#cec979",
+  "#cdb5d5",
+  "#658bcf",
+  "#7fd6a1",
+  "#c96e85",
+  "#c37b4f",
+  "#b37ac0",
+  "#c2aa8e"]; //d3.map(colorPalette12, d => d.color);
   const typeGroups = d3.map(colorPalette12, d => d.id);
 
   const top3Types = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
@@ -148,7 +159,7 @@ function showInfo(g, evt, d, a){
     .attr("opacity", 0.5);
 
   // remove previous info
-  d3.selectAll(".text").remove();
+  g.selectAll("p").remove();
 
   // append info
   g.selectAll("#info")
@@ -159,6 +170,9 @@ function showInfo(g, evt, d, a){
     .attr("class", "text")
     .attr("x", 0);
 
+  // make text visible
+  g.selectAll("p")
+  .style("opacity", 1);
 };
 
 // legend
@@ -328,7 +342,7 @@ function showIngreInfo(g, evt, d, a) {
   // remove previous info
   g.selectAll("p").remove();
 
-  // visible
+  // make card visible
   g.transition()
     .duration(300)
     .style("opacity", 1);
@@ -381,6 +395,16 @@ d3.select(this)
   .style("opacity", 0.8)
 } */
 
+// scroll to section
+function scrollToSection(section){
+  const element = document.getElementById(section);
+  const pos = element.getBoundingClientRect().top;
+  window.scrollTo({
+    top: pos + window.pageYOffset - 41,
+    behavior: "smooth"
+  });
+  console.log(pos);
+}
 
 // manage visualizations
 async function manageViz() {
@@ -455,6 +479,13 @@ async function manageViz() {
         topIngreChart(g, ingreData, width, height, marginLarge, speed);
         break;
     }
+
+    // scroll to section button
+    d3.select("#toSecond")
+      .on("click", () => scrollToSection("second"));
+
+    d3.select("#toThird")
+      .on("click", () => scrollToSection("third"));
   });
 
 

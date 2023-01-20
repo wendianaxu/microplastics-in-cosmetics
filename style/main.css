@@ -30,7 +30,14 @@ body{
 
   color-scheme: dark light;
   color:#e3e3e3;
-  background-color: #242424;
+  background-color: #07384b; 
+
+  /* background-image: url("../images/gradient.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%; */
+
+  background-image: url("images/overlay.png"), linear-gradient(60deg, #001b26 15%, #0b455b 85%);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -62,15 +69,16 @@ a:hover {
   padding-right:15px;
 }
 
-section{
+/* section{
   background-color: #242424;
-}
+} */
 
 .card{
+  border-radius: 10px;
   color-scheme: light dark;
   color:#242424;
-  background-color: #e3e3e3;
-  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
 }
 
 #vis {
@@ -92,6 +100,7 @@ section{
 
 div.legend{
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .yAxis .tick text{
@@ -108,7 +117,19 @@ circle.ingreChart{
   cursor: pointer;
 }
 
-#ingre-info{
+#info p, #ingre-info{
   opacity: 0;
+}
+
+.down{
+  opacity: 0.5;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+.down:hover{
+  opacity: 0.3;
 }
 

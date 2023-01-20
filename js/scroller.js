@@ -47,7 +47,7 @@
    * Its main job is figuring out which section is currently being viewed.
    */
   const position=()=>{
-    let sectionIndex = d3.bisect(sectionPositions, scrollY-50); // eslint-disable-line no-restricted-globals
+    let sectionIndex = d3.bisect(sectionPositions, scrollY-200); // eslint-disable-line no-restricted-globals
     sectionIndex = Math.min(sectionIndex, sectionPositions.length -1);
 
     if (sectionIndex !== currentSection){

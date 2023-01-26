@@ -3,7 +3,7 @@ main {
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  font-family: 'IBM Plex Serif', serif;
+  font-family: 'Urbanist', sans-serif;
   
 }
 
@@ -24,7 +24,7 @@ h3 {
 }
 
 body{
-  font-size: 16px;
+  font-size: 17px;
   line-height: 24px;
   font-weight: 400;
 
@@ -55,11 +55,13 @@ body{
 
 a {
   font-weight: 500;
-  color: #26c;
-  text-decoration: inherit;
+  color: #0f7374;
+  text-decoration: none;
+  border-bottom: dotted 1px;
 }
+
 a:hover {
-  color: #26c;
+  color: #238f91;
 }
 
 #sections {
@@ -98,22 +100,32 @@ section{
   height: 95vh;
 }
 
+#question {
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
 div.legend{
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 .yAxis .tick text{
-  font-size: 14px;
-  font-family: 'IBM Plex Serif', serif;
+  font-size: 15.5px;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .xAxis .tick text{
-  font-size: 10px;
-  font-family: 'IBM Plex Serif', serif;
+  font-size: 12px;
+  font-family: 'Urbanist', sans-serif;
 }
 
-circle.ingreChart{
+circle.ingre-chart{
   cursor: pointer;
 }
 

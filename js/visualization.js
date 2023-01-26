@@ -33,14 +33,6 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     + "Product type: " + `${product_types[d.product_type]}\n` 
     + "Number of microplastic ingredients: " + `${d.n_ingre}`);
 
-  // create an array that stores product name, brand, type, and # of MP present for each product
-  /* const pInfo = [
-    d3.map(data, d => d.product), 
-    d3.map(data, d => d.brand),
-    d3.map(data, d => product_types[d.product_type]), 
-    d3.map(data, d => d.n_ingre)
-  ]; */
-
   // product info text to be shown when hovered
   const pInfo = d3.map(data, 
     d => "<strong>Product name: </strong>" + `${d.product}\n`
@@ -183,7 +175,8 @@ function makeLegend(g, groups, color, x, y, r, rows, dx){
       .attr("cx", (d, i) => (i <= rows-1) ? x : (x + dx))
       .attr("cy", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .attr("r", r)
-      .style("fill", d => color(groups.indexOf(d)));
+      .style("fill", d => color(groups.indexOf(d)))
+      .attr("id", d => groups.indexOf(d));
   
   g.selectAll("legendText")
     .data(groups)
@@ -280,13 +273,13 @@ function topIngreChart(g, data, width, height, margin, speed){
       .transition()
       .duration(speed)
       .attr("r", d => rScale(d.percent_with_ingre))
-      .attr("class", "ingreChart"),
+      .attr("class", "ingre-chart"),
 
       update => update.transition()
       .duration(speed)
       .attr("transform", d => `translate(${x(d.ingredients)},${y(d.product_type)})`)
       .attr("r", d => rScale(d.percent_with_ingre))
-      .attr("class", "ingreChart"),
+      .attr("class", "ingre-chart"),
 
       exit => exit.transition()
       .duration(speed)
@@ -361,6 +354,75 @@ function showIngreInfo(g, evt, d, a) {
   );
 }
 
+/* pie chart */
+function pieChart(graph, data, filter, typeColorScale, width, height, margin, speed) {
+
+  const outerRadius = Math.min(width, height) / 2;
+  const innerRadius = outerRadius / 2;
+
+  const filteredData = data.filter(d => d.product_type === filter);
+
+  const color = d3.scaleOrdinal([0, 1], ["#007D00", "#B30000"]);
+  
+  const pie = d3.pie();
+
+  const arc = d3.arc()
+    .innerRadius(innerRadius)
+    .outerRadius(outerRadius);
+
+  graph.selectAll(".arc")
+    .data(pie(filteredData.map(d => d.percent)))
+/*     .join(
+      enter => enter.append("path")
+      .attr("class", "arc")
+      //.classed("mp-background", true)
+      .attr("d", arc)
+      .attr("fill", d => color(d.data))
+      .transition()
+      //.delay((d, i) => i * 500)
+      .duration(speed)
+      .attrTween("d", tween), 
+
+      update => update
+      .transition()
+      .duration(speed)
+      .attrTween("d", tween), 
+
+      exit => exit.transition()
+      .duration(speed)
+      .attrTween("d", exitTween)
+      .remove()
+    ); */
+      .join("path")
+      .attr("class", "arc")
+      //.classed("mp-background", true)
+      .attr("d", arc)
+      .attr("fill", d => color(d.data))
+      .transition()
+      .duration(speed)
+      .attrTween("d", tween);
+
+  function tween(d){
+    var interpolate = d3.interpolate(d.startAngle, d.endAngle);
+    return function(t){
+      d.endAngle = interpolate(t);
+      return arc(d);
+    };
+
+   
+  };
+  function exitTween(d){
+    var interpolate = d3.interpolate(d.endAngle, d.startAngle);
+    return function(t){
+      d.endAngle = interpolate(t);
+      return arc(d);
+    };
+  };
+  
+
+
+};
+
 // tooltips https://d3-graph-gallery.com/graph/interactivity_tooltip.html
 // create a tooltip
 /* var Tooltip = d3.select("#vis")
@@ -414,6 +476,22 @@ async function manageViz() {
   const marginLarge = { left: 100, right: 50, top: 50, bottom: 50 };
   const speed = 1500;
 
+  const colorPalette12 = await d3.csv("data/colorPalette12.csv");
+  const typeColors = ["#788a3c",
+  "#589071",
+  "#7acbd5",
+  "#738090",
+  "#cec979",
+  "#cdb5d5",
+  "#658bcf",
+  "#7fd6a1",
+  "#c96e85",
+  "#c37b4f",
+  "#b37ac0",
+  "#c2aa8e"]; 
+  const typeGroups = d3.map(colorPalette12, d => d.id);
+  const typeColorScale = d3.scaleOrdinal(typeGroups, typeColors);
+
   // bubble chart data
   let data = await d3.csv("data/top3Brands.csv");
   // sort by product id
@@ -424,18 +502,14 @@ async function manageViz() {
     return a.findIndex(v => v.p_id === value.p_id) === index;
   });
 
-  console.log(uniqueData.length);
-
-  // unique product type
-  const typeData = data.filter(
-    (value, index, a) => {
-      return a.findIndex(v => v.product_type === value.product_type) === index;
-    }
-  );
 
   // microplastic ingredient chart data
   const ingreData = await d3.csv("data/top3IngredientByType.csv");
 
+  // percent of mp containing products by type data
+  const percentData = await d3.csv("data/percentByType.csv");
+
+  // svg for chart
   const svg = d3.select("#chart")
     .attr("viewbox", [0, 0, width, height])
     .style("height", `${height}px`)
@@ -462,7 +536,107 @@ async function manageViz() {
         d3.select("#legend1")
           .attr("opacity", 0);
 
-        d3.selectAll(".ingreChart")
+        d3.selectAll(".mp-background")
+          .attr("opacity", 1)
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove();
+
+        break;
+      case 2:
+        d3.selectAll(".circle")
+        .transition()
+        .duration(speed)
+        .attr("r", 0)
+        .remove();
+
+        svg.append("svg:image")
+            .attr("class", "mp-background")
+            .attr("id", "pic1")
+            .attr("xlink:href", "/images/mp-cosmetics.png")
+            .attr("y", 40)
+            .attr("height", 200)
+            .attr("width", 300)
+            .attr("opacity", 0)
+            .transition()
+            .duration(speed)
+            .attr("opacity", 1); 
+
+        svg.append("svg:image")
+            .attr("class", "mp-background")
+            .attr("id", "pic2")
+            .attr("xlink:href", "/images/mp-turtle.png")
+            .attr("x", 320)
+            .attr("y", 40)
+            .attr("height", 200)
+            .attr("width", 300)
+            .attr("opacity", 0)
+            .transition()
+            .duration(speed)
+            .attr("opacity", 1); 
+
+        const graph = svg.append("g")
+          .attr("class", "mp-background")
+          .attr("transform", `translate(${200}, ${500})`);
+
+        pieChart(graph, percentData, "12", typeColorScale, 400, 400, marginSmall, speed);
+
+        // add legend as filter button
+        const legend = svg.append("g")
+          .attr("class", "mp-background")
+          .attr("opacity", 0);
+
+        const rows = 6;
+        const groupNames = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
+        const dx = 140;
+  
+        makeLegend(legend, groupNames, typeColorScale, 420, 400, 10, rows, dx);
+
+        legend.transition()
+          .duration(speed)
+          .attr("opacity", 1);
+
+        legend.selectAll("circle")
+          .on("click", (evt) => pieChart(graph, percentData, evt.target.id, typeColorScale, 400, 400, marginSmall, speed));
+
+
+        break;
+      case 3:
+
+        // remove mp background
+        d3.selectAll(".mp-background")
+          .attr("opacity", 1)
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove();
+          
+
+        // remove ingredient chart
+        d3.selectAll(".ingre-chart")
+          .transition()
+          .duration(speed)
+          .attr("r", 0)
+          .remove();
+
+        d3.selectAll(".xAxis,.yAxis")
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove();
+      break;
+      case 4:
+        topIngreChart(g, ingreData, width, height, marginLarge, speed);
+        /* d3.select("#body")
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove(); */
+      break;
+      /* case 3:
+        // remove ingredient chart
+        d3.selectAll(".ingre-chart")
           .transition()
           .duration(speed)
           .attr("r", 0)
@@ -474,10 +648,18 @@ async function manageViz() {
           .attr("opacity", 0)
           .remove();
 
-        break;
-      case 2:
-        topIngreChart(g, ingreData, width, height, marginLarge, speed);
-        break;
+        //const img = document.createElement("img");
+        svg.append("svg:image")
+            .attr("id", "body")
+            .attr("xlink:href", "/images/body.png")
+            .attr("y", -150)
+            .attr("height", 1000)
+            .attr("width", 600)
+            .attr("aria-hidden", true)
+            .attr("opacity", 0)
+            .transition()
+            .duration(speed)
+            .attr("opacity", 1); */
     }
 
     // scroll to section button

@@ -4,7 +4,7 @@ library(dplyr)
 library(stringr)
 library(readr)
 
-setwd("/Users/wenx/Documents/Code/data-viz-projects/mp")
+setwd("/Users/wenx/Documents/Code/data-viz-projects/mp/data")
 
 # transform #
 data <- read_csv("MPdataFinalized2.csv")
@@ -57,3 +57,19 @@ write.csv(id_data, "id_data.csv", row.names = FALSE)
 write.csv(mp_products, "mp_products_1016.csv", row.names = FALSE)
 
 write.csv(data_full, "MPdataFinalized3.csv", row.names = FALSE)
+
+# assign id to unique product within each product type #
+data <- read_csv("bestSelling.csv")
+
+# keep unique products and sort by product id
+id_data <- data %>%
+  distinct(product, .keep_all = TRUE) %>%
+  arrange(p_id)
+
+# assign id to unique products within each product type
+id_data <- id_data %>%
+  group_by(product_type) %>%
+  mutate(p_id_type = row_number() - 1) %>%
+  ungroup()
+
+write.csv(id_data, "bestSellingId.csv")

@@ -1,4 +1,4 @@
-
+let typewriterOn = true;
 
 /* Bubble Chart */
 async function bubbleChart(g, data, grouping, width, height, margin, speed) {
@@ -6,7 +6,6 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   const colorPalette = await d3.csv("data/colorPalette.csv");
   const colorPalette12 = await d3.csv("data/colorPalette12.csv");
   const product_types = d3.map(colorPalette, d => d.product_type);
-  console.log(product_types);
   const typeColors = ["#788a3c",
   "#589071",
   "#7acbd5",
@@ -25,6 +24,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
   const mp_present = ["Microplastics Free", "Contains Microplastics"];
   const mpColors = ["#007D00", "#B30000"];
+
 
    // title (tooptip)
   const title = d3.map(data, 
@@ -58,7 +58,6 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   groups = Array.from(groups).sort(
     (a, b) => a-b
   );
-  
 
   // Construct scales.
   let color;
@@ -189,6 +188,7 @@ function makeLegend(g, groups, color, x, y, r, rows, dx){
       .style("alignment-baseline", "middle");
 }
 
+
 /* top ingredients by product type */
 function topIngreChart(g, data, width, height, margin, speed){
   // data point info
@@ -259,7 +259,8 @@ function topIngreChart(g, data, width, height, margin, speed){
       .call(wrap, 40, 5);
   });
 
-  
+  // initialize tooltip
+  let toolTip; 
 
 
   // append circles
@@ -287,19 +288,43 @@ function topIngreChart(g, data, width, height, margin, speed){
       .remove()
 
     )
+
     .on("mouseover", evt => {
       d3.select(evt.target)
         .attr("opacity", 0.5);
+
+      // create tooltip
+      toolTip = d3.select("#vis")
+        .append("div")
+        .style("opacity", 1)
+        .attr("class", "tooltip")
+        .style("font-size", "20px")
+        .style("position", "absolute");
       })
+
     .on("click", (evt, d) => showIngreInfo(d3.select("#ingre-info"), evt, d, iInfo))
+
+    // move tooltip with mouse position
+    .on("mousemove", (evt, d) => {
+      toolTip
+        .html(`${(d.percent_with_ingre  * 100).toFixed(2)}%`)
+        .style("left", (evt.screenX + 10) + "px")
+        .style("top", (evt.screenY - 160) + "px")
+        .style("font-size", "35px")
+        .style("font-weight", "bold")
+        .style("color", "#a7e6e7");
+
+    })
     .on("mouseout", evt => {
       d3.select(evt.target)
         .attr("opacity", 1);
+
+      // remove tooltip
+      d3.selectAll(".tooltip")
+          .remove();
     })
     .append("title")
     .text(d => dInfo[d.id]);
-
-    
   
 }
 
@@ -341,13 +366,13 @@ function showIngreInfo(g, evt, d, a) {
     .style("opacity", 1);
 
   // append info
-  g.html("<p>" + a[d.i_id] + "</p>")
+/*   g.html("<p>" + a[d.i_id] + "</p>")
     .attr("x", 0)
     .select("p")
     .attr("opacity", 0)
     .transition()
     .duration(1200)
-    .attr("opacity", 1);
+    .attr("opacity", 1); */
   
   g.html("<p>" + a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%` 
   + "</strong> of all <em>" + d.product_type + "</em> products.</p>"
@@ -401,9 +426,61 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
       .transition()
       .duration(speed)
       .attrTween("d", tween);
+    
+    // explanatory text
+    graph.selectAll("text.type")
+      .data(filteredData.filter(d => d.mp_present === "1"))
+      .join("text")
+      .text(d => "Out of " + `${d.n_product}` + " of " + `${d.product_type_name}` + " products, ")
+      .attr("class", "type")
+      .attr("x", -140)
+      .attr("y", -175)
+      .attr("font-size", "20px")
+      .style("fill", "#e3e3e3")
+      .style("font-weight", "bold")
+      .style("opacity", 0)
+      .transition()
+      .duration(speed)
+      .style("opacity", 1);
+
+    // percentage of red products
+    graph.selectAll("text.percentage")
+      .data(filteredData.filter(d => d.mp_present === "1"))
+      .join("text")
+      .text(d => (d.percent  * 100).toFixed(0) + "%")
+      .attr("class", "percentage")
+      .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius - 5})`)
+      .attr("font-size", "2em")
+      .attr("font-weight", "bold")
+      .style("fill", "#B30000")
+      .style("opacity", 0)
+      .transition()
+      .duration(speed)
+      .style("opacity", 1);
+
+      graph.append("text")
+      .text("contain")
+      .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius + 15})`)
+      .attr("font-size", "16px")
+      .style("fill", "#e3e3e3")
+      .style("opacity", 0)
+      .transition()
+      .duration(speed)
+      .style("opacity", 1);
+
+    graph.append("text")
+      .text("microplastics")
+      .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius + 32})`)
+      .attr("font-size", "16px")
+      .style("fill", "#e3e3e3")
+      .style("opacity", 0)
+      .transition()
+      .duration(speed)
+      .style("opacity", 1);
+      
 
   function tween(d){
-    var interpolate = d3.interpolate(d.startAngle, d.endAngle);
+    const interpolate = d3.interpolate(d.startAngle, d.endAngle);
     return function(t){
       d.endAngle = interpolate(t);
       return arc(d);
@@ -411,6 +488,7 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
 
    
   };
+
   function exitTween(d){
     var interpolate = d3.interpolate(d.endAngle, d.startAngle);
     return function(t){
@@ -422,6 +500,169 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
 
 
 };
+
+/* guessing game */
+async function guessingGame(g, data, width, height, margin, speed){
+  data = data.filter(d => d.product_type == 1 || d.product_type == 6 || d.product_type == 7);
+
+  const colorPalette = await d3.csv("data/colorPalette.csv");
+  const colorPalette12 = await d3.csv("data/colorPalette12.csv");
+  const product_types = d3.map(colorPalette, d => d.product_type);
+  const typeColors = ["#788a3c",
+  "#589071",
+  "#7acbd5",
+  "#738090",
+  "#cec979",
+  "#cdb5d5",
+  "#658bcf",
+  "#7fd6a1",
+  "#c96e85",
+  "#c37b4f",
+  "#b37ac0",
+  "#c2aa8e"]; 
+  const typeGroups = d3.map(colorPalette12, d => d.id);
+  const mpGroups = ["0", "1"];
+  
+
+  const top3Types = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
+
+  const mp_present = ["Microplastics Free", "Contains Microplastics"];
+  const mpColors = ["#007D00", "#B30000"];
+
+  const radius = width / 95;
+
+  // color scales
+  const typeColorScale = d3.scaleOrdinal(typeGroups, typeColors);
+  const presenceColorScale = d3.scaleOrdinal(mpGroups, mpColors);
+
+  // title
+  const title = d3.map(data, 
+    d => `${d.mp_present}`);
+
+  // append circles (column)
+/*   g.selectAll("circle")
+    .data(data, d => d.id)
+    .join(
+      enter => enter.append("circle")
+      .attr("transform", d => `translate(${x(d.product_type)},${y(d.p_id_type)})`)
+      .attr("r", 0)
+      .attr("fill", d => typeColorScale(d.product_type))
+      .transition()
+      .duration(speed)
+      .attr("r", radius)
+      .attr("class", "guessing-game"),
+
+      update => update.transition()
+      .duration(speed)
+      .attr("transform", d => `translate(${x(d.product_type)},${y(d.p_id_type)})`)
+      .attr("r", radius)
+      .attr("class", "guessing-game"),
+
+      exit => exit.transition()
+      .duration(speed)
+      .attr("r", 0)
+      .remove()
+
+    ) */
+    
+    // append circles (bubble chart)
+/*     g.selectAll(".circle")
+    .data(root.leaves(), d => d.data)
+    .join(
+      enter => enter.append("circle")
+        .attr("class", "circle")
+        .attr("transform", d => `translate(${d.x},${d.y})`)
+        .attr("r", 0)
+        .attr("fill", d => typeColorScale(G[d.data]))
+        .transition()
+        .duration(speed)
+        .attr("r", radius),
+
+      update => update.transition()
+        .duration(speed)
+        .attr("transform", d => `translate(${d.x},${d.y})`)
+        .attr("r", radius)
+        .attr("fill", d => typeColorScale(G[d.data])),
+
+      exit => exit.transition()
+        .duration(speed)
+        .attr("r", 0)
+        .remove()
+    )
+    .attr("class", "circle") */
+
+    // append circles (blocks)
+    const x = d3.scalePoint()
+      .domain(data.map(d => d.product_type))
+      .range([margin.left + 30, width - margin.right - 120]);
+
+    // x axis
+    const xAxis = g.append("g")
+    .attr("class", "xAxis")
+    .attr("transform", `translate(0, ${margin.top + 30})`)
+    .call(d3.axisTop(x))
+    .attr("opacity", 0)
+    .transition()
+      .duration(speed)
+      .attr("opacity", 1);
+
+    xAxis.select("path.domain")
+    .attr("opacity", 0); 
+
+    const numColumns = 5;
+
+    // append circles
+    g.selectAll(".guessing-game")
+    .data(data, d => d.data)
+    .join(
+      enter => enter.append("circle")
+      .attr("transform", (d) => `translate(${x(d.product_type) - radius*3 + (d.p_id_type%numColumns) * radius*3}, ${margin.top + 60 + Math.floor(d.p_id_type/numColumns) * 20})`)
+      .attr("r", 0)
+      .attr("fill", d => typeColorScale(d.product_type))
+      .transition()
+      .duration(speed)
+      .attr("r", radius)
+      .attr("class", "guessing-game"),
+
+      update => update.transition()
+      .duration(speed)
+      .attr("transform", (d) => `translate(${x(d.product_type) - radius*3 + (d.p_id_type%numColumns) * radius*3}, ${margin.top + 60 + Math.floor(d.p_id_type/numColumns) * 20})`)
+      .attr("r", radius)
+      .attr("class", "guessing-game"),
+
+      exit => exit.transition()
+      .duration(speed)
+      .attr("r", 0)
+      .remove()
+    )
+    .on("click", (evt, d) => {
+      const circle = d3.select(evt.target);
+      // reveal mp presence by changing color scale
+      circle.attr("fill", d => presenceColorScale(d.mp_present));
+
+      // show mp list and count
+      
+    });
+
+
+}
+
+function showMpList(g, evt, d, a) {
+
+  // remove previous info
+  g.selectAll("p").remove();
+
+  // make card visible
+  g.transition()
+    .duration(300)
+    .style("opacity", 1);
+
+  // append info
+  g.html("<p>" + d.a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%` 
+  + "</strong> of all <em>" + d.product_type + "</em> products.</p>"
+  );
+}
+
 
 // tooltips https://d3-graph-gallery.com/graph/interactivity_tooltip.html
 // create a tooltip
@@ -465,7 +706,7 @@ function scrollToSection(section){
     top: pos + window.pageYOffset - 41,
     behavior: "smooth"
   });
-  console.log(pos);
+  //console.log(pos);
 }
 
 // manage visualizations
@@ -493,14 +734,14 @@ async function manageViz() {
   const typeColorScale = d3.scaleOrdinal(typeGroups, typeColors);
 
   // bubble chart data
-  let data = await d3.csv("data/top3Brands.csv");
+  let data = await d3.csv("data/top3BrandsId.csv");
   // sort by product id
-  data = data.sort((a, b) => a.p_id - b.p_id);
+  const uniqueData = data.sort((a, b) => a.p_id - b.p_id);
 
   // unique product id
-  const uniqueData = data.filter((value, index, a) => {
+/*   const uniqueData = data.filter((value, index, a) => {
     return a.findIndex(v => v.p_id === value.p_id) === index;
-  });
+  }); */
 
 
   // microplastic ingredient chart data
@@ -508,6 +749,9 @@ async function manageViz() {
 
   // percent of mp containing products by type data
   const percentData = await d3.csv("data/percentByType.csv");
+
+  // guessing game data
+  const guessingData = await d3.csv("data/bestSellingId.csv");
 
   // svg for chart
   const svg = d3.select("#chart")
@@ -519,6 +763,9 @@ async function manageViz() {
 
   /* const mpPresentData = uniqueData.filter(d => d.mp_present === 1);
   const filteredData = uniqueData.filter(d => d.product_type === 6); */
+
+  
+  
 
   const scroll = scroller();
   scroll(d3.selectAll("section"));
@@ -545,17 +792,27 @@ async function manageViz() {
 
         break;
       case 2:
+
+        // remove circles
         d3.selectAll(".circle")
         .transition()
         .duration(speed)
         .attr("r", 0)
         .remove();
 
+        // remove typewriter
+        typewriterOn = false;
+        d3.selectAll(".typewriter")
+          .transition()
+          .duration(speed)
+          .style("opacity", 0)
+          .remove();
+
         svg.append("svg:image")
             .attr("class", "mp-background")
             .attr("id", "pic1")
             .attr("xlink:href", "/images/mp-cosmetics.png")
-            .attr("y", 40)
+            .attr("y", 20)
             .attr("height", 200)
             .attr("width", 300)
             .attr("opacity", 0)
@@ -568,7 +825,7 @@ async function manageViz() {
             .attr("id", "pic2")
             .attr("xlink:href", "/images/mp-turtle.png")
             .attr("x", 320)
-            .attr("y", 40)
+            .attr("y", 20)
             .attr("height", 200)
             .attr("width", 300)
             .attr("opacity", 0)
@@ -578,27 +835,49 @@ async function manageViz() {
 
         const graph = svg.append("g")
           .attr("class", "mp-background")
-          .attr("transform", `translate(${200}, ${500})`);
+          .attr("transform", `translate(${150}, ${500})`);
 
-        pieChart(graph, percentData, "12", typeColorScale, 400, 400, marginSmall, speed);
+        pieChart(graph, percentData, "12", typeColorScale, 300, 300, marginSmall, speed);
+
+        
+        
 
         // add legend as filter button
         const legend = svg.append("g")
           .attr("class", "mp-background")
+          .attr("transform", `translate(${350}, ${350})`)
           .attr("opacity", 0);
 
         const rows = 6;
         const groupNames = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
         const dx = 140;
   
-        makeLegend(legend, groupNames, typeColorScale, 420, 400, 10, rows, dx);
+        makeLegend(legend, groupNames, typeColorScale, 20, 55, 10, rows, dx);
+
+        // instruction
+        legend.append("text")
+        .attr("x", 10)
+        .text("Click on bubbles to filter by")
+        .attr("font-size", "18px")
+        .attr("font-weight", "bold")
+        .style("fill", "#e3e3e3");
+
+        legend.append("text")
+        .attr("x", 10)
+        .attr("y", 22)
+        .text("product type: ")
+        .attr("font-size", "18px")
+        .attr("font-weight", "bold")
+        .style("fill", "#e3e3e3");
+
+        
 
         legend.transition()
           .duration(speed)
           .attr("opacity", 1);
 
         legend.selectAll("circle")
-          .on("click", (evt) => pieChart(graph, percentData, evt.target.id, typeColorScale, 400, 400, marginSmall, speed));
+          .on("click", (evt) => pieChart(graph, percentData, evt.target.id, typeColorScale, 300, 300, marginSmall, speed));
 
 
         break;
@@ -625,8 +904,91 @@ async function manageViz() {
           .duration(speed)
           .attr("opacity", 0)
           .remove();
+
+        d3.selectAll(".tooltip")
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove();
+
+        /* typewriter */
+        typewriterOn = true;
+        const aText = new Array(
+          "The manufacture or the introduction", 
+          "...", 
+          "of a", 
+          "</br>",
+          "<strong>rinse-off cosmetic</strong>", 
+          "</br>",
+          "that contains intentionally-added", 
+          "plastic microbeads.", 
+          "</br>",
+          "...", 
+          "the term 'plastic microbead' means",
+          "any solid plastic particle that is", 
+          "less than five millimeters in size", 
+          "and is intended to be used to ", 
+          "</br>",
+          "<strong>exfoliate or cleanse</strong>",
+          "</br>",
+          "the human body or any part thereof ..."
+          );
+
+          const iSpeed = 40; // time delay of print out
+          let iIndex = 0; // start printing array at this position
+          let iArrLength = aText[0].length; // the length of the text array
+          let iScrollAt = 20; // start scrolling up at this many lines
+           
+          let iTextPos = 0; // initialise text position
+          let sContents = ''; // initialise contents variable
+          let iRow; // initialise current row
+
+          const vis = document.getElementById("vis");
+          const text = document.createElement("div");
+          text.className = "typewriter";
+          vis.appendChild(text);
+          text.style.position = 'absolute';
+          text.style.top = '10%';
+          text.style.left = '10%';
+          text.style.lineHeight = '1';
+           
+          function typewriter()
+          {
+           sContents =  ' ';
+           iRow = Math.max(0, iIndex-iScrollAt);
+
+           
+           while ( iRow < iIndex && typewriterOn === true) {
+            sContents += aText[iRow++] + '<br />';
+           }
+           text.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+           if ( iTextPos++ === iArrLength && typewriterOn === true) {
+            iTextPos = 0;
+            iIndex++;
+            if ( iIndex !== aText.length ) {
+             iArrLength = aText[iIndex].length;
+             setTimeout(typewriter, 60);
+            }
+           } else {
+            setTimeout(typewriter, iSpeed);
+           }
+          };
+
+        if (typewriterOn === true){
+          typewriter();
+        }
+        
+
       break;
-      case 4:
+      case 4: // top ingredients chart
+        typewriterOn = false; 
+        // remove typewriter
+        d3.selectAll(".typewriter")
+          .transition()
+          .duration(speed)
+          .style("opacity", 0)
+          .remove();
+
         topIngreChart(g, ingreData, width, height, marginLarge, speed);
         /* d3.select("#body")
           .transition()
@@ -634,6 +996,25 @@ async function manageViz() {
           .attr("opacity", 0)
           .remove(); */
       break;
+
+/*       case 5: // guessing game
+        // remove top ingredients chart
+        d3.selectAll(".ingre-chart")
+          .transition()
+          .duration(speed)
+          .attr("r", 0)
+          .remove();
+
+        d3.selectAll(".xAxis,.yAxis")
+          .transition()
+          .duration(speed)
+          .attr("opacity", 0)
+          .remove();
+
+        // guessing game
+        console.log(guessingData);
+        guessingGame(g, guessingData, width, height, marginSmall, speed); */
+
       /* case 3:
         // remove ingredient chart
         d3.selectAll(".ingre-chart")
@@ -668,6 +1049,12 @@ async function manageViz() {
 
     d3.select("#toThird")
       .on("click", () => scrollToSection("third"));
+
+    d3.select("#toFourth")
+      .on("click", () => scrollToSection("fourth"));
+
+    d3.select("#toFifth")
+      .on("click", () => scrollToSection("fifth"));
   });
 
 

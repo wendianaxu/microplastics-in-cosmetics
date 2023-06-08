@@ -1,0 +1,19 @@
+"","brand","product","product_type","ingredients","p_id","i_id","n_ingre","n_product","mp_count","mp_percent","mp_present","p_id_type"
+"1","Axe","Apollo Body Wash 250 ml",1,"Polymethylsilsesquioxane",1682,524,5,5393,1941,0.359910996,1,0
+"2","Neutrogena","Body Clear Body Scrub",1,"none",3144,272,0,5393,1941,0.359910996,0,1
+"3","Dove","Body Wash Deep Moisture",1,"PPG-2 Hydroxyethyl Cocamide",3357,624,3,5393,1941,0.359910996,1,2
+"4","Dial","Body Wash, Mountain Fresh",1,"Sodium Polyacrylate",3372,679,4,5393,1941,0.359910996,1,3
+"5","CeraVe","Daily Moisturizing Lotion",6,"Phenyl Trimethicone",5898,459,5,5751,2040,0.354720918,1,0
+"6","Irish Spring","Deep Action Scrub Body Wash 532 ml",1,"none",6058,272,0,5393,1941,0.359910996,0,4
+"7","Bath & Body Works","Duschgel & Schaumbad Aromatherapy Stress Relief Eucalyptus & Spearmint 295 ml",1,"Carbomer",7142,112,1,5393,1941,0.359910996,1,5
+"8","Nivea","for Men Maximum Hydration 3-in-1 Body Wash",1,"Polyquaternium-10",8675,530,2,5393,1941,0.359910996,1,6
+"9","Bath & Body Works","Japanese Cherry Blossom Shower Gel 10 oz",1,"PEG-4 Rapeseedamide",11918,367,1,5393,1941,0.359910996,1,7
+"10","Nivea","Men Duschgel Deep Active Clean 250 ml",1,"Polyquaternium-10",14239,530,3,5393,1941,0.359910996,1,8
+"11","CeraVe","Moisturizing Cream",1,"Sodium Polyacrylate",15297,679,6,5393,1941,0.359910996,1,9
+"12","Cetaphil","Moisturizing Cream 16 oz",1,"Carbomer",15299,112,3,5393,1941,0.359910996,1,10
+"13","Method","Pure Peace Body Wash Travel Size 3.4 oz",1,"Trideceth-12",18578,723,7,5393,1941,0.359910996,1,11
+"14","CeraVe","Salicylic Acid Cleanser for Rough & Bumpy Skin 237 ml",6,"none",19846,272,0,5751,2040,0.354720918,0,1
+"15","Dove","Sensitive Skin Body Wash",1,"PEG-40 Hydrogenated Castor Oil",20344,370,5,5393,1941,0.359910996,1,12
+"16","Aveeno","Skin Relief Body Lotion with Shea Butter",1,"PEG-6",21662,388,2,5393,1941,0.359910996,1,13
+"17","Bio-Oil","Skincare Oil 200 ml",1,"none",21805,272,0,5393,1941,0.359910996,0,14
+"18","Jergens","Ultra Healing Lotion",1,"Polysorbate 20",25522,569,1,5393,1941,0.359910996,1,15

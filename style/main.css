@@ -152,7 +152,7 @@ circle.ingre-chart, .mp-background circle, circle.guessing-game{
   cursor: pointer;
 }
 
-.mp-background circle, circle.guessing-game:hover{
+.mp-background circle:hover, circle.guessing-game:hover{
   opacity: .5;
 }
 
@@ -168,9 +168,23 @@ circle.ingre-chart, .mp-background circle, circle.guessing-game{
   margin-top: 5%;
   cursor: pointer;
   transition: opacity ease-in-out .15s;
+  animation: jumpInfinite 1.5s infinite;
 }
 
 .down:hover{
   opacity: 0.3;
+}
+
+/* Animation */
+@keyframes jumpInfinite {
+  0% {
+    margin-top: 5%;
+  }
+  50% {
+    margin-top: 6%;
+  }
+  100% {
+    margin-top: 5%;
+  }
 }
 

@@ -116,10 +116,10 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     .on("mouseout", (evt, d) => {
       d3.select(evt.target)
         .attr("opacity", 1);
-    })
-    // tooltip
+    });
+/*     // tooltip
     .append("title")
-    .text(d => title[d.data]);
+    .text(d => title[d.data]) */
   
   // create legend
   let legend, rows, groupNames, dx;

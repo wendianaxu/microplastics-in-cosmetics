@@ -811,7 +811,7 @@ async function manageViz() {
         svg.append("svg:image")
             .attr("class", "mp-background")
             .attr("id", "pic1")
-            .attr("xlink:href", "/images/mp-cosmetics.png")
+            .attr("xlink:href", "images/mp-cosmetics.png")
             .attr("y", 20)
             .attr("height", 200)
             .attr("width", 300)
@@ -823,7 +823,7 @@ async function manageViz() {
         svg.append("svg:image")
             .attr("class", "mp-background")
             .attr("id", "pic2")
-            .attr("xlink:href", "/images/mp-turtle.png")
+            .attr("xlink:href", "images/mp-turtle.png")
             .attr("x", 320)
             .attr("y", 20)
             .attr("height", 200)
@@ -1060,119 +1060,6 @@ async function manageViz() {
 
   // after filtering: 
   // bubbleChart(g, filtered_data, speed);
-
-}
-
-
-
-
-/* From Tutorial */
-
-// build image list from local files
-function buildImageList() {
-  const images = [];
-
-  images.push('./images/tardis.jpg');
-
-  for (let i = 1; i <= 13; i++) {
-    images.push(`./images/doctor-${i}.jpg`);
-  }
-  return images;
-}
-
-
-
-
-async function drawVisualization() {
-  const width = 700;
-  const height = 700;
-
-  const innerRadius = 150;
-  const outerRadius = Math.min(width, height) / 2;
-
-  const data = await d3.csv("data/dr_who.csv");
-  const images = buildImageList();
-
-  // svg already created in index.html
-  const svg = d3.select("#vis")
-    .attr("viewbox", [0, 0, width, height])
-    .style("height", `${height}px`)
-    .style("width", `${width}px`)
-  // add a mask for the image
-  svg.append("clipPath")
-    .attr("id", "circle-view")
-    .append("circle")
-    .attr("cx", 0)
-    .attr("cy", 0)
-    .attr("r", innerRadius - 2)
-
-
-  // move the origin to the center of the SVG
-  const graph = svg.append("g")
-    .attr("transform", `translate(${width / 2}, ${height / 2})`);
-
-  // scales
-  // x scale
-  const x = d3.scaleBand()
-    .domain(data.map(d => d.doctor))
-    .range([0, 2 * Math.PI])
-
-  // y scale
-  const y = d3.scaleRadial()
-    .domain([0, d3.max(data, d => +d.duration)])
-    .range([innerRadius, outerRadius])
-
-  // create arc function
-  const arc = d3.arc()
-    .innerRadius(innerRadius)
-    .outerRadius(d => y(+d.duration))
-    .startAngle(d => x(d.doctor))
-    .endAngle(d => x(d.doctor) + x.bandwidth())
-    .padAngle(0.01)
-    .padRadius(innerRadius)
-
-
-  // add image
-  const image = graph.append("image")
-    // x and y refer to upper left of the image
-    .attr("x", -innerRadius)
-    .attr("y", -innerRadius)
-    .attr("width", innerRadius * 2)
-    .attr("href", images[0])
-    // apply mask to image
-    .attr("clip-path", "url(#circle-view");
-
-
-  // create bars
-  graph.selectAll(".bar")
-    .data(data, d => d.doctor)
-    .join("path")
-    .attr("class", "bar")
-    // pass in the arc function
-    .attr("d", arc)
-    // highlight bar when hovered
-    .on("mouseover", (evt, d) => {
-      // select target of the event (i.e., hovered bar)
-      d3.select(evt.target)
-        // add class "selected" to the element
-        .classed("selected", true);
-
-      // change imgae
-      d3.select("image")
-        .attr("href", images[+d.doctor]);
-
-    })
-    // remove highlight when not hovered
-    .on("mouseout", (evt, d) => {
-      d3.select(evt.target)
-        .classed("selected", false);
-      // change image back to Tardis
-      d3.select("image")
-        .attr("href", images[0]);
-    })
-
-
-
 
 }
 

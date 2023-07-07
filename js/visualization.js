@@ -8,16 +8,17 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   const product_types = d3.map(colorPalette, d => d.product_type);
   const typeColors = ["#788a3c",
   "#589071",
-  "#7acbd5",
-  "#738090",
-  "#cec979",
-  "#cdb5d5",
-  "#658bcf",
   "#7fd6a1",
+  "#c2aa8e",
+  "#cec979",
+  "#7acbd5",
+  "#658bcf",
   "#c96e85",
-  "#c37b4f",
+  "#cdb5d5",
   "#b37ac0",
-  "#c2aa8e"]; //d3.map(colorPalette12, d => d.color);
+  "#c37b4f",
+  "#738090"
+  ]; //d3.map(colorPalette12, d => d.color);
   const typeGroups = d3.map(colorPalette12, d => d.id);
 
   const top3Types = ["Body", "Deodorant", "Eye Makeup", "Face Makeup", "Facial Care", "Hair", "Hands", "Lips", "Nails", "Perfume", "Sun Care", "Other"];
@@ -58,6 +59,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   groups = Array.from(groups).sort(
     (a, b) => a-b
   );
+  
 
   // Construct scales.
   let color;

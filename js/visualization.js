@@ -329,8 +329,7 @@ function topIngreChart(g, data, width, height, margin, speed){
       d3.selectAll(".tooltip")
           .remove();
     })
-    .append("title")
-    .text(d => dInfo[d.id]);
+    .append("title");
   
 }
 

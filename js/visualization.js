@@ -147,9 +147,13 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 
 // show product info
 function showInfo(g, evt, d, a){
-  // change bubble color
+  // change bubble color & enlarge bubble
   d3.select(evt.target)
-    .attr("opacity", 0.5);
+    .attr("opacity", 0.5)
+    .transition()
+      .duration(100)
+      .attr("r", 11)
+      .attr("opacity", 0.8);
 
   // remove previous info
   g.selectAll("p").remove();
@@ -165,7 +169,7 @@ function showInfo(g, evt, d, a){
 
   // make text visible
   g.selectAll("p")
-  .style("opacity", 1);
+    .style("opacity", 1);
 };
 
 // legend
@@ -382,7 +386,16 @@ function showIngreInfo(g, evt, d, a) {
 }
 
 /* pie chart */
-function pieChart(graph, data, filter, typeColorScale, width, height, margin, speed) {
+function pieChart(graph, data, filter, typeColorScale, width, height, margin, speed, legend) {
+  // grey out all circles but the selected one
+  legend.selectAll("circle")
+    .attr("opacity", 0.5)
+    .classed("overrideHover", false);
+  
+  d3.select(document.getElementById(filter))
+    .attr("class", "overrideHover")
+    .attr("opacity", 1);
+
 
   const outerRadius = Math.min(width, height) / 2;
   const innerRadius = outerRadius / 2;
@@ -839,11 +852,6 @@ async function manageViz() {
           .attr("class", "mp-background")
           .attr("transform", `translate(${150}, ${500})`);
 
-        pieChart(graph, percentData, "12", typeColorScale, 300, 300, marginSmall, speed);
-
-        
-        
-
         // add legend as filter button
         const legend = svg.append("g")
           .attr("class", "mp-background")
@@ -872,14 +880,15 @@ async function manageViz() {
         .attr("font-weight", "bold")
         .style("fill", "#e3e3e3");
 
-        
-
         legend.transition()
           .duration(speed)
           .attr("opacity", 1);
 
+        pieChart(graph, percentData, "12", typeColorScale, 300, 300, marginSmall, speed, legend);
+
         legend.selectAll("circle")
-          .on("click", (evt) => pieChart(graph, percentData, evt.target.id, typeColorScale, 300, 300, marginSmall, speed));
+          .on("click", (evt) => {pieChart(graph, percentData, evt.target.id, typeColorScale, 300, 300, marginSmall, speed, legend)});
+
 
 
         break;

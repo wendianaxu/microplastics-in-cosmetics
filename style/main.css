@@ -156,6 +156,10 @@ circle.ingre-chart, .mp-background circle, circle.guessing-game{
   opacity: .5;
 }
 
+.overrideHover{
+  opacity: 1 !important;
+}
+
 #info p, #ingre-info{
   opacity: 0;
 }

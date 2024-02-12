@@ -3,7 +3,7 @@ main {
   flex-direction:column;
   align-items:center;
   justify-content:center;
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Roboto Slab', serif;
   
 }
 
@@ -35,7 +35,8 @@ h3 {
 .typewriter strong{
   /* text-decoration: underline; */
   font-size: 1.25em;
-  color: #a7e6e7;
+  font-weight: 1000;
+  color: #1e7979;
   text-decoration: none;
 }
 
@@ -47,15 +48,15 @@ body{
   font-weight: 400;
 
   color-scheme: dark light;
-  color:#e3e3e3;
-  background-color: #07384b; 
+  color:#07384b;
+  background-color: #e2e6e7; 
 
   /* background-image: url("../images/gradient.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%; */
 
-  background-image: url("../images/overlay.png"), linear-gradient(60deg, #001b26 15%, #0b455b 85%);
+  /* background-image: url("../images/overlay.png"), linear-gradient(60deg, #001b26 15%, #0b455b 85%); */
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -104,11 +105,9 @@ strong{
 
 
 .card{
-  border-radius: 10px;
   color-scheme: light dark;
   color:#242424;
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 20px;
+  padding-top: 20px;
 }
 
 #vis {

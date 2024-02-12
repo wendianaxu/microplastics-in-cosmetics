@@ -97,6 +97,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
         .attr("transform", d => `translate(${d.x},${d.y})`)
         .attr("r", 0)
         .attr("fill", d => color(G[d.data]))
+        .attr("opacity", 0.8)
         .transition()
         .duration(speed)
         .attr("r", radius),
@@ -117,7 +118,7 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     .on("mouseover", (evt, d) => showInfo(info_g, evt, d, pInfo))
     .on("mouseout", (evt, d) => {
       d3.select(evt.target)
-        .attr("opacity", 1);
+        .attr("opacity", 0.8);
     });
 /*     // tooltip
     .append("title")
@@ -149,10 +150,10 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
 function showInfo(g, evt, d, a){
   // change bubble color & enlarge bubble
   d3.select(evt.target)
-    .attr("opacity", 0.5)
+    .attr("opacity", 0.8)
     .transition()
-      .duration(100)
-      .attr("r", 11)
+      .duration(200)
+      .attr("r", d3.randomInt(10, 17))
       .attr("opacity", 0.8);
 
   // remove previous info
@@ -189,7 +190,7 @@ function makeLegend(g, groups, color, x, y, r, rows, dx){
       .attr("x", (d, i) => (i <= rows-1) ? (x + 20) : (x + 20 + dx))
       .attr("y", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .text(d => d)
-      .style("fill", "#e3e3e3")
+      .style("fill", "#07384b")
       .attr("text-anchor", "left")
       .style("alignment-baseline", "middle");
 }
@@ -277,6 +278,7 @@ function topIngreChart(g, data, width, height, margin, speed){
       .attr("transform", d => `translate(${x(d.ingredients)},${y(d.product_type)})`)
       .attr("r", 0)
       .attr("fill", d => colorScale(+d.rank_in_type))
+      .attr("opacity", 0.8)
       .transition()
       .duration(speed)
       .attr("r", d => rScale(d.percent_with_ingre))
@@ -313,12 +315,12 @@ function topIngreChart(g, data, width, height, margin, speed){
     // move tooltip with mouse position
     .on("mousemove", (evt, d) => {
       toolTip
-        .html(`${(d.percent_with_ingre  * 100).toFixed(2)}%`)
+        .html(`${(d.percent_with_ingre  * 100).toFixed(1)}%`)
         .style("left", (evt.screenX + 10) + "px")
         .style("top", (evt.screenY - 160) + "px")
         .style("font-size", "35px")
         .style("font-weight", "bold")
-        .style("color", "#a7e6e7");
+        .style("color", "#07384b");
 
     })
     .on("mouseout", evt => {
@@ -437,6 +439,7 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
       //.classed("mp-background", true)
       .attr("d", arc)
       .attr("fill", d => color(d.data))
+      .attr("opacity", 0.8)
       .transition()
       .duration(speed)
       .attrTween("d", tween);
@@ -445,12 +448,12 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
     graph.selectAll("text.type")
       .data(filteredData.filter(d => d.mp_present === "1"))
       .join("text")
-      .text(d => "Out of " + `${d.n_product}` + " of " + `${d.product_type_name}` + " products, ")
+      .text(d => "Out of " + `${d.n_product}` + " " + `${d.product_type_name}` + " products, ")
       .attr("class", "type")
       .attr("x", -140)
       .attr("y", -175)
       .attr("font-size", "20px")
-      .style("fill", "#e3e3e3")
+      .style("fill", "#07384b")
       .style("font-weight", "bold")
       .style("opacity", 0)
       .transition()
@@ -466,6 +469,7 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
       .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius - 5})`)
       .attr("font-size", "2em")
       .attr("font-weight", "bold")
+      .attr("opacity", 0.8)
       .style("fill", "#B30000")
       .style("opacity", 0)
       .transition()
@@ -476,7 +480,7 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
       .text("contain")
       .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius + 15})`)
       .attr("font-size", "16px")
-      .style("fill", "#e3e3e3")
+      .style("fill", "#07384b")
       .style("opacity", 0)
       .transition()
       .duration(speed)
@@ -486,7 +490,7 @@ function pieChart(graph, data, filter, typeColorScale, width, height, margin, sp
       .text("microplastics")
       .attr("transform", `translate(${-outerRadius/2 + innerRadius/2 - 8}, ${-outerRadius/2 + innerRadius + 32})`)
       .attr("font-size", "16px")
-      .style("fill", "#e3e3e3")
+      .style("fill", "#07384b")
       .style("opacity", 0)
       .transition()
       .duration(speed)
@@ -869,7 +873,7 @@ async function manageViz() {
         .text("Click on bubbles to filter by")
         .attr("font-size", "18px")
         .attr("font-weight", "bold")
-        .style("fill", "#e3e3e3");
+        .style("fill", "#07384b");
 
         legend.append("text")
         .attr("x", 10)
@@ -877,7 +881,7 @@ async function manageViz() {
         .text("product type: ")
         .attr("font-size", "18px")
         .attr("font-weight", "bold")
-        .style("fill", "#e3e3e3");
+        .style("fill", "#07384b");
 
         legend.transition()
           .duration(speed)

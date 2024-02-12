@@ -791,11 +791,14 @@ async function manageViz() {
     switch (section) {
       case 0:
         bubbleChart(g, uniqueData, "d.product_type", width, height, marginSmall, speed);
-        d3.select("#legend1")
-          .attr("opacity", 1);
-        
         break;
+
       case 1:
+        d3.select("#legend1")
+        .attr("opacity", 1);
+        break;
+
+      case 2:
         bubbleChart(g, uniqueData, "d.mp_present", width, height, marginSmall, speed);
 
         d3.select("#legend1")
@@ -809,7 +812,8 @@ async function manageViz() {
           .remove();
 
         break;
-      case 2:
+
+      case 3:
 
         // remove circles
         d3.selectAll(".circle")
@@ -895,7 +899,7 @@ async function manageViz() {
 
 
         break;
-      case 3:
+      case 4:
 
         // remove mp background
         d3.selectAll(".mp-background")
@@ -994,7 +998,7 @@ async function manageViz() {
         
 
       break;
-      case 4: // top ingredients chart
+      case 5: // top ingredients chart
         typewriterOn = false; 
         // remove typewriter
         d3.selectAll(".typewriter")
@@ -1058,6 +1062,11 @@ async function manageViz() {
     }
 
     // scroll to section button
+    /* TODO: functions to automatically scroll */
+
+    d3.select("#to-1-2")
+      .on("click", () => scrollToSection("1-2"));
+
     d3.select("#toSecond")
       .on("click", () => scrollToSection("second"));
 

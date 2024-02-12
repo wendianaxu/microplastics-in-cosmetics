@@ -49,7 +49,7 @@ body{
 
   color-scheme: dark light;
   color:#07384b;
-  background-color: #e2e6e7; 
+  background-color: #d0dbdf; 
 
   /* background-image: url("../images/gradient.png");
   background-repeat: no-repeat;
@@ -138,7 +138,7 @@ section{
 }
 
 div.legend{
-  padding-top: 40px;
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 

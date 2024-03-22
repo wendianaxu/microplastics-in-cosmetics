@@ -26,14 +26,6 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
   const mp_present = ["Microplastics Free", "Contains Microplastics"];
   const mpColors = ["#007D00", "#B30000"];
 
-
-   // title (tooptip)
-  const title = d3.map(data, 
-    d => "Product name: " + `${d.product}\n`
-    + "Brand: " + `${d.brand}\n`
-    + "Product type: " + `${product_types[d.product_type]}\n` 
-    + "Number of microplastic ingredients: " + `${d.n_ingre}`);
-
   // product info text to be shown when hovered
   const pInfo = d3.map(data, 
     d => "<strong>Product name: </strong>" + `${d.product}\n`
@@ -115,10 +107,44 @@ async function bubbleChart(g, data, grouping, width, height, margin, speed) {
     )
     .attr("class", "circle")
     // hover behavior
-    .on("mouseover", (evt, d) => showInfo(info_g, evt, d, pInfo))
+    .on("mouseover", (evt, d) => {
+      showInfo(info_g, evt, d, pInfo);
+
+      // highlight selected group in legend
+      let legendId;
+      switch (grouping) {
+        case "d.product_type":
+          legendId = typeGroups.indexOf(G[d.data]);
+          break;
+        case "d.mp_present":
+          legendId = G[d.data];
+          break;
+      }
+
+      const greyOut = d3.selectAll(".legend circle:not(#l" + legendId + ")");
+      greyOut
+        .attr("opacity", 0.1);
+
+
+    })
     .on("mouseout", (evt, d) => {
       d3.select(evt.target)
         .attr("opacity", 0.8);
+
+      // reset legend highlight
+      let legendId;
+      switch (grouping) {
+        case "d.product_type":
+          legendId = typeGroups.indexOf(G[d.data]);
+          break;
+        case "d.mp_present":
+          legendId = G[d.data];
+          break;
+      }
+
+      const greyOut = d3.selectAll(".legend circle:not(#l" + legendId + ")");
+      greyOut
+        .attr("opacity", 1);
     });
 /*     // tooltip
     .append("title")
@@ -175,16 +201,26 @@ function showInfo(g, evt, d, a){
 
 // legend
 function makeLegend(g, groups, color, x, y, r, rows, dx){
-  g.selectAll("legendCircle")
+
+  g.selectAll(".legendCircle")
     .data(groups)
     .join("circle")
       .attr("cx", (d, i) => (i <= rows-1) ? x : (x + dx))
       .attr("cy", (d, i) => (i <= rows-1) ? (y + i * 35) : (y + (i-rows) * 35))
       .attr("r", r)
       .style("fill", d => color(groups.indexOf(d)))
-      .attr("id", d => groups.indexOf(d));
+      .attr("id", d => "l" + groups.indexOf(d))
+      .on("mouseover", (evt, d) => {
   
-  g.selectAll("legendText")
+        // highlight selected group in graph
+
+        d3.selectAll(".circle")
+          .filter()
+  
+  
+      })
+  
+  g.selectAll(".legendText")
     .data(groups)
     .join("text")
       .attr("x", (d, i) => (i <= rows-1) ? (x + 20) : (x + 20 + dx))
@@ -202,7 +238,7 @@ function topIngreChart(g, data, width, height, margin, speed){
   const dInfo = d3.map(data, 
     d => "<strong>Microplastic name: </strong>" + `${d.ingredients}\n`
     + "<strong>Product type: </strong>" + `${d.product_type}\n`
-    + "<strong>Percentage of products with this microplastic: </strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%\n`
+    + "<strong>Percentage of products with this microplastic: </strong>" + `${(d.percent_with_ingre  * 100).toFixed(0)}%\n`
     + "<strong>Rank: </strong>" + `${d.rank_in_type}`);
 
   // ingredient info
@@ -315,7 +351,7 @@ function topIngreChart(g, data, width, height, margin, speed){
     // move tooltip with mouse position
     .on("mousemove", (evt, d) => {
       toolTip
-        .html(`${(d.percent_with_ingre  * 100).toFixed(1)}%`)
+        .html(`${(d.percent_with_ingre  * 100).toFixed(0)}%`)
         .style("left", (evt.screenX + 10) + "px")
         .style("top", (evt.screenY - 160) + "px")
         .style("font-size", "35px")
@@ -381,19 +417,20 @@ function showIngreInfo(g, evt, d, a) {
     .duration(1200)
     .attr("opacity", 1); */
   
-  g.html("<p>" + a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%` 
+  g.html("<p>" + a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(0)}%` 
   + "</strong> of all <em>" + d.product_type + "</em> products.</p>"
   );
 }
 
 /* pie chart */
 function pieChart(graph, data, filter, typeColorScale, width, height, margin, speed, legend) {
+  // console.log(filter);
   // grey out all circles but the selected one
   legend.selectAll("circle")
-    .attr("opacity", 0.5)
+    .attr("opacity", 0.2)
     .classed("overrideHover", false);
   
-  d3.select(document.getElementById(filter))
+  d3.select(document.getElementById("l" + filter))
     .attr("class", "overrideHover")
     .attr("opacity", 1);
 
@@ -676,7 +713,7 @@ function showMpList(g, evt, d, a) {
     .style("opacity", 1);
 
   // append info
-  g.html("<p>" + d.a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(2)}%` 
+  g.html("<p>" + d.a[d.i_id] + "</p>" + "<p>" + d.ingredients + " is found in <strong>" + `${(d.percent_with_ingre  * 100).toFixed(0)}%` 
   + "</strong> of all <em>" + d.product_type + "</em> products.</p>"
   );
 }
@@ -794,6 +831,7 @@ async function manageViz() {
         break;
 
       case 1:
+        bubbleChart(g, uniqueData, "d.product_type", width, height, marginSmall, speed);
         d3.select("#legend1")
         .attr("opacity", 1);
         break;
@@ -894,8 +932,9 @@ async function manageViz() {
         pieChart(graph, percentData, "12", typeColorScale, 300, 300, marginSmall, speed, legend);
 
         legend.selectAll("circle")
-          .on("click", (evt) => {pieChart(graph, percentData, evt.target.id, typeColorScale, 300, 300, marginSmall, speed, legend)});
-
+          .on("click", (evt) => {
+            pieChart(graph, percentData, evt.target.id.substring(1,), typeColorScale, 300, 300, marginSmall, speed, legend);
+          });
 
 
         break;
